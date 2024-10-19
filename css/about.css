@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  color: #fff;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Potta One";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+/* -------------mainImg--------------- */
+
+.mainImg .wrapper {
+  position: relative;
+
+  height: 579px;
+  margin-bottom: 50px;
+}
+
+.mainImg .img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.mainImgContent {
+  position: absolute;
+  transform: translate(-50%);
+  top: 140px;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  z-index: 100;
+
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 3px;
+  line-height: 40px;
+}
+
+/* -------------kodawari--------------- */
+
+.korawari .wrapper {
+  width: 1035px;
+  height: 650px;
+  /* background-color: #cdcdcd; */
+  margin: auto;
+  position: relative;
+}
+
+.korawari .korawariContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.korawari .fourBox {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.neta,
+.syari {
+  width: 190px;
+  cursor: pointer;
+}
+.tennaicyouri,
+.syouyu {
+  width: 170px;
+  cursor: pointer;
+}
+
+.korawariContainer .buttonDown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.korawariContainer .buttonDown button {
+  width: 50px;
+  height: 50px;
+  background-color: #06436b;
+  border-radius: 50%;
+  border: transparent;
+}
+
+.buttonDown button {
+  color: #fff;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+
+/* ----------introduction------------ */
+
+.introduction {
+  width: 100%;
+  height: 1650px;
+}
+
+.introductionSec1 {
+  height: 800px;
+}
+
+.introduction h1 {
+  width: 100%;
+  font-size: 52px;
+}
+
+.introductionNeta {
+  max-width: 900px;
+
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.introductionNeta video {
+  width: 700px;
+  margin-left: auto;
+  z-index: 100;
+}
+
+.netaContainer {
+  width: 830px;
+  height: 353px;
+  background-color: #ffffff;
+  position: absolute;
+  margin-right: auto;
+  top: 300px;
+  border-top: #06436b solid 10px;
+  border-bottom: #06436b solid 10px;
+}
+
+.netaContainer .maguro {
+  width: 70px;
+  position: absolute;
+  left: 57px;
+  top: 110px;
+}
+
+.netaContainer .pattenBg {
+  width: 830px;
+  position: absolute;
+}
+
+.netaContent h4 {
+  color: #06436b;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  position: absolute;
+  z-index: 110;
+  top: 125px;
+  left: 200px;
+}
+
+.netaContent p {
+  color: #06436b;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  position: absolute;
+  line-height: 23px;
+  z-index: 110;
+  top: 180px;
+  left: 200px;
+}
+
+/* --------introductionNeta2-------- */
+
+.introductionNeta2 {
+  max-width: 900px;
+  /* height: 700px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.introductionNeta2 video {
+  width: 700px;
+  margin-right: auto;
+  z-index: 100;
+}
+
+.introductionNeta2 .netaContainer2 {
+  width: 830px;
+  height: 353px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 300px;
+  border-top: #06436b solid 10px;
+  border-bottom: #06436b solid 10px;
+}
+
+.netaContainer2 .samon {
+  width: 70px;
+  position: absolute;
+  right: 57px;
+  top: 110px;
+}
+
+.netaContainer2 .pattenBg {
+  width: 830px;
+  position: absolute;
+}
+
+.netaContent2 h4 {
+  color: #06436b;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  position: absolute;
+  z-index: 110;
+  top: 125px;
+  left: 130px;
+}
+
+.netaContent2 p {
+  color: #06436b;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  position: absolute;
+  line-height: 23px;
+  z-index: 110;
+  top: 180px;
+  left: 130px;
+  width: 550px;
+}
+
+/* ------------introduction2------------ */
+
+.introduction2 {
+  height: 780px;
+}
+
+.introduction2 h1 {
+  width: 100%;
+  font-size: 52px;
+}
+
+.introductionSyari {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.introductionSyari video {
+  width: 700px;
+  z-index: 100;
+}
+
+.syariContainer {
+  width: 950px;
+  height: 280px;
+  background-color: #ffffff;
+  position: absolute;
+
+  top: 300px;
+  border-top: #06436b solid 10px;
+  border-bottom: #06436b solid 10px;
+}
+
+.syariContainer .syariBg {
+  width: 950px;
+  position: absolute;
+}
+
+.syariContent {
+  display: flex;
+  justify-content: center;
+}
+
+.syariContent p {
+  color: #06436b;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  position: absolute;
+  line-height: 23px;
+  z-index: 110;
+
+  top: 125px;
+
+  width: 780px;
+}
+
+/* ------------cookInStore-------------- */
+
+.cookInStore h1 {
+  width: 100%;
+  font-size: 52px;
+}
+
+.cookInStoreContainer .cut,
+.fire,
+.steam,
+.fried {
+  width: 450px;
+  height: 155px;
+  background-color: #ffffff;
+  border-top: #06436b solid 7px;
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.cutAndFireSec,
+.steamAndFriedSec {
+  margin: auto;
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.cookInStoreContainer .title {
+  position: absolute;
+  width: 350px;
+}
+
+.cookInStoreContainer .title .titleContent,
+.titleContent,
+.titleContent,
+.titleContent {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: -5px;
+  left: 228px;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.cookInStoreContainer .cuttitle,
+.firetitle,
+.steamtitle,
+.friedtitle {
+  position: absolute;
+  top: -3.5px;
+  left: 225px;
+  transform: translate(-50%, -50%);
+  width: 130px;
+}
+
+.cookInStoreContainer .cutBg,
+.fireBg,
+.steamBg,
+.friedBg {
+  width: 450px;
+}
+
+.cookInStoreContainer .cutContent,
+.fireContent,
+.steamContent,
+.friedContent {
+  position: absolute;
+  color: #06436b;
+  width: 400px;
+  display: flex;
+  top: 38px;
+  left: 25px;
+  z-index: 400;
+}

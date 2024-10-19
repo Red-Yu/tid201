@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  color: #fff;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.sec1Wrapper {
+  position: relative;
+  height: 1100px;
+}
+.mainImg {
+  position: relative;
+  height: 964px;
+}
+
+.mainImg .img1,
+.img2,
+.img3 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+.mainImg .container {
+  position: absolute;
+  top: 8%;
+  left: 18%;
+  z-index: 400;
+}
+.mainImg .container h1 {
+  color: #ffffff;
+  font-family: "Potta One";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+}
+
+.indexSec2 {
+  width: 100%;
+  position: absolute;
+  height: 500px;
+  top: 650px;
+  z-index: 300;
+}
+.indexSec2 img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.sec1Wrapper .content1,
+.content2 {
+  width: 470px;
+  height: 120px;
+  color: #fff;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 600; */
+  font-style: normal;
+  font-size: 13px;
+  line-height: 200%;
+  letter-spacing: 0.2em;
+  z-index: 400;
+}
+
+.sec1Wrapper .content1 {
+  position: absolute;
+  top: 600px;
+  left: 9%;
+}
+
+.sec1Wrapper .content2 {
+  position: absolute;
+  top: 840px;
+  right: 9%;
+  z-index: 301;
+}
+
+/* ----------banner---------- */
+.banner h1 {
+  color: #ffffff;
+  font-family: "Potta One";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.bannerSec {
+  background-color: #06436b;
+  width: 100%;
+  height: 450px;
+  margin-top: 20px;
+  display: flex;
+}
+.bannerSec img {
+  margin: auto;
+  width: 970px;
+}
+
+/* ----------bigNews---------- */
+
+.bigNews .wrapper {
+  display: flex;
+  justify-content: center;
+}
+.bigNews .leftBox {
+  background-color: #06436b;
+  width: 315px;
+  height: 315px;
+  margin-top: 70px;
+  border-radius: 12px 0 0 12px;
+}
+.bigNews .rightBox {
+  border: #06436b solid 4px;
+  width: 720px;
+  height: 315px;
+  margin-top: 70px;
+  border-radius: 0 12px 12px 0;
+}
+
+.bigNews .leftBox .content {
+  height: 315px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigNews .rightBox .content {
+  height: 315px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigNews .leftBox .content p {
+  color: #fff;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+}
+
+.bigNews .rightBox .content p {
+  margin: 3px 30px 10px 30px;
+  font-size: 14px;
+}
+
+.bigNews .rightBox .content .date {
+  font-weight: 600;
+  margin: 20px 30px 0 30px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+.rightBox .content li:first-child .date {
+  margin-top: 0;
+}
+
+/* ----------menu---------- */
+
+.menu .wrapper h1 {
+  color: #ffffff;
+  font-family: "Potta One";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  text-align: center;
+  margin: 50px;
+}
+
+.menu .wrapper {
+  margin: auto;
+  width: 1035px;
+  height: 950px;
+}
+
+.boxLimit,
+.boxNigiri,
+.boxMeat,
+.boxGunkan {
+  width: 230px;
+  height: auto;
+  position: relative;
+  /* background-color: #ea5e5e; */
+}
+
+.boxLimit,
+.boxGunkan {
+  margin-top: 60px;
+}
+
+.menu video {
+  width: 230px;
+  position: absolute;
+}
+
+.menu .menuContent {
+  width: 40px;
+  position: absolute;
+  top: -15px;
+  right: 15px;
+}
+
+.menu .sushi {
+  position: absolute;
+  top: 235px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu .topContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+}
+
+.menu .menuLeft {
+  width: 517px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu .menuRight {
+  width: 517px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu button {
+  color: #fff;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  background-color: transparent;
+  border: #fff solid 1px;
+  position: absolute;
+  left: 50%;
+  top: 360px;
+  transform: translate(-50%, -50%);
+  padding: 6px 10px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-right {
+  font-size: 16px;
+  margin-bottom: 1.5px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+/* ------------bottom------------ */
+
+.menu .bottomContainer {
+  display: flex;
+  justify-content: center;
+
+  width: 1035px;
+}
+
+.menu .menuLeftRight {
+  width: 1005.5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxSideMenu,
+.boxSet {
+  width: 230px;
+  height: auto;
+  position: relative;
+  margin-top: 60px;
+}
+
+.boxTakeout video {
+  width: 458.33px;
+  position: relative;
+}
+.boxTakeout {
+  height: auto;
+  position: relative;
+}
+
+/* ---------kodawari---------- */
+
+.korawari .wrapper {
+  width: 1035px;
+  height: 700px;
+  /* background-color: #cdcdcd; */
+  margin: auto;
+  position: relative;
+}
+
+.korawari .wrapper h1 {
+  color: #ffffff;
+  font-family: "Potta One";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  text-align: center;
+  margin: 120px 0 70px 0;
+}
+
+.korawari .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.korawari .fourBox {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.neta,
+.syari {
+  width: 190px;
+  cursor: pointer;
+}
+.tennaicyouri,
+.syouyu {
+  width: 170px;
+  cursor: pointer;
+}
+.korawari .moreButtom .button {
+  color: #fff;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  background-color: #06436b;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 50px;
+  border: transparent;
+}
+
+.korawari .moreButtom .arrow-right {
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.korawari .backgroundPic {
+  position: absolute;
+  /* background-color: #d86a6a; */
+  width: 1035px;
+  height: 700px;
+  top: 0;
+}
+
+.korawari .backgroundPic .tennaicyouriPic {
+  width: 430px;
+  position: absolute;
+  left: -100px;
+}
+
+.korawari .backgroundPic .syouyuPic {
+  width: 430px;
+  position: absolute;
+  bottom: 0;
+  right: -100px;
+}
+
+.korawari .backgroundPic .netaPic {
+  width: 330px;
+  position: absolute;
+  top: -20px;
+  right: -70px;
+}
+
+.korawari .backgroundPic .syariPic {
+  width: 330px;
+  position: absolute;
+  bottom: 30px;
+  left: -70px;
+}
+
+/* ---------osusume---------- */
+
+.osusume {
+  width: 1035px;
+  margin: auto;
+}
+
+.osusume h1 {
+  color: #ffffff;
+  font-family: "Potta One";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.osusume .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7.5px;
+}
+
+.osusume img {
+  width: 340px;
+}
+
+/* --------------topics--------------- */
+
+.topics {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topics h1 {
+  color: #ffffff;
+  font-family: "Potta One";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.topicsContainer {
+  width: 1035px;
+  height: 400px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  margin-bottom: 50px;
+}
+
+.topicsContainer .date,
+.content {
+  color: black;
+}
+
+.topicBar {
+  width: 950px;
+  display: flex;
+  align-items: center;
+  padding: 25px 20px 25px 0;
+  cursor: pointer;
+  border-bottom: 1.5px solid #d49100;
+}
+
+.topicsContainer .date {
+  /* margin-right: 30px; */
+  font-weight: 500;
+  margin-right: 30px;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+}
+
+.category,
+.categoryImportant,
+.categoryMenu {
+  background-color: #4ca2a2;
+  color: #fff;
+  padding: 5px;
+  padding-bottom: 7px;
+  text-align: center;
+  width: 9em;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 30px;
+  line-height: 25px;
+}
+
+.categoryImportant {
+  background-color: #ac4352;
+}
+
+.categoryMenu {
+  background-color: #496f42;
+}
+
+.topicsContainer .content {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  width: 600px;
+}
+
+.topicsContainer .topicBar span {
+  color: #06436b;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: normal;
+  margin-left: auto;
+}

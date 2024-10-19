@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul li {
+  list-style: none;
+}
+
+footer {
+  background-color: #06436b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 391px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-family: "Noto Sans";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 10px;
+  min-width: 800px;
+  margin-left: 35px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  width: 62%;
+  min-width: 700px;
+  height: 240px;
+  margin-top: 40px;
+  /* background-color: #a4a4a4; */
+  color: #fff;
+  font-family: "Murecho", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 250%;
+}
+
+.imgLeft {
+  position: absolute;
+  left: -5px;
+  top: 0;
+  max-width: 100%; /* 確保圖片不超出容器 */
+  height: auto; /* 自動調整高度 */
+  z-index: 2;
+}
+.imgRight {
+  position: absolute;
+  right: -5px; /* 使用 right 來確保圖片在右邊 */
+  top: 0;
+  max-width: 100%; /* 確保圖片不超出容器 */
+  height: auto; /* 自動調整高度 */
+  z-index: 2;
+}
+.bgImg {
+  background-image: url(../assets/footer/footer\ logo.png);
+  width: 100%;
+  height: 391px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+}
+.goToTop img {
+  width: 202px;
+  /* height: 167px; */
+  z-index: 1;
+  position: absolute;
+  top: 35%;
+  left: 66%;
+}
+.newsCheck {
+  width: 800px;
+  height: 220px;
+  /* background-color: #989898; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: "Potta One";
+}
+.newsCheck h1 {
+  color: #ffffff;
+  font-family: "Potta One";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 4.8px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.newsCheck .container {
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.newsCheck .leftBox {
+  width: 360px;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+
+  background-color: #06436b;
+  position: relative;
+}
+.newsCheck .leftBox p {
+  font-size: 20px;
+  margin: auto;
+  margin-left: 185px;
+  text-align: center;
+  line-height: 100%;
+  font-family: "Potta One";
+}
+.newsCheck .leftBox img {
+  width: 110px;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+.newsCheck .rightBox {
+  width: 360px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #06436b;
+  font-size: 12px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.newsCheck .rightBox h2 {
+  background-color: #e3e3e3;
+  width: 100%;
+  height: 30px;
+  color: #06436b;
+  text-align: center;
+}
+.newsCheck .rightBox .img {
+  margin: auto;
+}
+.newsCheck .rightBox .img img {
+  margin: 10px;
+  width: 50px;
+}
