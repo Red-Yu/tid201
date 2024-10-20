@@ -8,6 +8,13 @@ header {
 
   /* background-color: #06436b; */
 }
+a {
+  text-decoration: none;
+  color: inherit;
+
+  margin: 0;
+  padding: 0;
+}
 
 nav {
   display: flex;
@@ -61,15 +68,15 @@ nav ul li {
 
 nav .rightNav ul li {
   font-size: 20px;
-  margin: 10px;
-  margin-right: 26.5px;
+  cursor: pointer;
 }
-/* nav .leftNav ul li:last-child {
-  margin-right: 50%;
-} */
+nav .rightNav ul li:first-child {
+  margin-left: 40px;
+}
+
 nav .rightNav ul li:last-child {
   margin-right: 0;
 }
-nav ul li:first-child {
+nav ul a:first-child {
   margin-left: 40px;
 }
