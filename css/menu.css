@@ -127,6 +127,7 @@ h1 {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .thingsToNote {
@@ -168,4 +169,69 @@ h1 {
   align-items: center;
 }
 
-/* ------things to note-------- */
+/* ------driveThrough-------- */
+
+.driveThrough {
+  position: relative;
+  width: 100%;
+  height: 2019px;
+}
+
+.driveThroughBg {
+  margin-top: 180px;
+  margin-bottom: 250px;
+  width: 100%;
+  height: 550px;
+  background-image: url(../assets/menu/takeout/driveThrough-wave_bg.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.driveThrough h1 {
+  margin: 20px;
+  color: #06436b;
+}
+
+.driveThrough h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Potta One";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138%;
+  letter-spacing: 3.6px;
+  text-shadow: 2px 2px 0 #06436b, -1px -1px 0 #06436b, 1px -1px 0 #06436b,
+    -1px 1px 0 #06436b; /* 黑色邊框 */
+}
+.driveThroughImg {
+  width: 770px;
+  position: absolute;
+  top: -140px;
+  left: -140px;
+}
+
+.backgroundYellow {
+  width: 100%;
+  height: 1859px;
+  position: absolute;
+  top: 400px;
+  background-image: url(../assets/menu/takeout/bg_yellow.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.backgroundYellow .car {
+  width: 230px;
+  position: absolute;
+  top: -80px;
+  right: 150px;
+}
+
+.newsCheck h1 {
+  color: #06436b;
+}

@@ -93,6 +93,7 @@ footer .container {
   align-items: center;
   color: #fff;
   font-family: "Potta One";
+  z-index: 500;
 }
 .newsCheck h1 {
   color: #ffffff;
@@ -103,12 +104,14 @@ footer .container {
   letter-spacing: 4.8px;
   margin-top: 20px;
   margin-bottom: 5px;
+  z-index: 500;
 }
 .newsCheck .container {
   width: 800px;
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+  z-index: 500;
 }
 .newsCheck .leftBox {
   width: 360px;
