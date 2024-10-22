@@ -174,7 +174,7 @@ h1 {
 .driveThrough {
   position: relative;
   width: 100%;
-  height: 2019px;
+  height: 1800px;
 }
 
 .driveThroughBg {
@@ -217,12 +217,14 @@ h1 {
 
 .backgroundYellow {
   width: 100%;
-  height: 1859px;
+
+  height: 1759px;
   position: absolute;
   top: 400px;
   background-image: url(../assets/menu/takeout/bg_yellow.png);
-  background-position: center;
+  background-position: top;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .backgroundYellow .car {
@@ -234,4 +236,105 @@ h1 {
 
 .newsCheck h1 {
   color: #06436b;
+}
+
+/* -----------driveThroughMenu--------------- */
+
+.driveThroughMenuBg {
+  width: 1000px;
+  height: 1008px;
+  background-image: url(../assets/menu/takeout/box_bg.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 700px;
+  z-index: 600;
+}
+
+.driveThroughMenu {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 918px;
+  text-align: center;
+}
+
+.driveThroughMenu h1 {
+  color: #fff;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.driveThroughMenu h2 {
+  font-size: 28px;
+}
+
+.driveThroughMenu .button {
+  margin: auto;
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.driveThroughMenu .sushi,
+.side,
+.dessert {
+  width: 225px;
+}
+
+.sushiMenu {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sushiMenuImg {
+  width: 201px;
+  height: 173px;
+  background-color: #fff;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sushiMenuImg img {
+  width: 145px;
+}
+
+.sushiMenuContent {
+  width: 201px;
+  height: 110px;
+  border: #fff solid 2px;
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sushiMenuBox .remind {
+  font-size: 10px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+
+.sushiSlide {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  bottom: 380px;
+}
+
+.sushiSlide img {
+  width: 974px;
+  margin-top: 140px;
 }

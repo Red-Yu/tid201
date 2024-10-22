@@ -66,6 +66,11 @@ nav ul li {
   /* 防止容器縮小 */
 }
 
+a {
+  flex-shrink: 0;
+  /* 防止容器縮小 */
+}
+
 nav .rightNav ul li {
   font-size: 20px;
   cursor: pointer;
