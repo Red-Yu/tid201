@@ -28,7 +28,7 @@ h1 {
 
 .seaWrapper {
   width: 100%;
-  height: 700px;
+  height: 760px;
   background-color: #8e8e8e;
   background-image: url(../assets/menu/main1.png);
   background-position: center;
@@ -46,6 +46,7 @@ h1 {
 .seaArea .wave1 {
   bottom: 145px;
   left: -266px;
+  z-index: 2;
 }
 
 .seaArea .wave2 {
@@ -56,14 +57,110 @@ h1 {
 .seaArea .wave3 {
   bottom: 0;
   left: -266px;
+  z-index: 250;
 }
 
 .seaArea h1 {
   font-size: 28px;
   color: #06436b;
   letter-spacing: 3.5px;
-  /* margin-top: 9%; */
-  margin-top: 110px;
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+/* ---------seaArea_menuSec-------- */
+
+.menuSec img {
+  width: 160px;
+}
+
+.menuSec1 {
+  width: 620px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.menuSec1Box1,
+.menuSec1Box2 {
+  position: relative;
+}
+
+.menuSec1 .menuContentLimit {
+  width: 34px;
+  position: absolute;
+  right: 5px;
+  top: -38px;
+}
+
+.menuSec1 .menuContentNigiri {
+  width: 34px;
+  position: absolute;
+  right: -10px;
+  top: -38px;
+}
+/* -------------2----------------- */
+
+.menuSec2 {
+  width: 1050px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuSec2Box1,
+.menuSec2Box2,
+.menuSec2Box3 {
+  position: relative;
+  z-index: 300;
+}
+
+.menuSec2 .menuContentNiku {
+  width: 34px;
+  position: absolute;
+  right: 5px;
+  top: -38px;
+}
+
+.menuSec2 .menuContentGunkan {
+  width: 72px;
+  position: absolute;
+  right: -20px;
+  top: -50px;
+}
+
+.menuSec2 .menuContentSide {
+  width: 34px;
+  position: absolute;
+  right: -15px;
+  top: -50px;
+}
+
+/* -------------3----------------- */
+
+.menuSec3 {
+  width: 620px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuSec3Box1,
+.menuSec3Box2 {
+  position: relative;
+  z-index: 200;
+}
+
+.menuSec3 .menuContentKids {
+  width: 34px;
+  position: absolute;
+  right: -10px;
+  top: -38px;
+}
+
+.menuSec3 .menuContentTakeout {
+  width: 34px;
+  position: absolute;
+  right: -30px;
+  top: -38px;
 }
 
 /* ---------menu-------- */
