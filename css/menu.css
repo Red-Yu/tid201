@@ -29,44 +29,87 @@ h1 {
 .seaWrapper {
   width: 100%;
   height: 760px;
-  background-color: #8e8e8e;
   background-image: url(../assets/menu/main1.png);
   background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
 }
+
+/* ---------wave動畫-------- */
+@keyframes waveAnimation1 {
+  0% {
+    transform: translateX(-170px);
+  }
+  50% {
+    transform: translateX(170px);
+  }
+  100% {
+    transform: translateX(-170px);
+  }
+}
+
+@keyframes waveAnimation2 {
+  0% {
+    transform: translateX(-220px);
+  }
+  50% {
+    transform: translateX(220px);
+  }
+  100% {
+    transform: translateX(-220px);
+  }
+}
+
+@keyframes waveAnimation3 {
+  0% {
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+/* ---------wave動畫-------- */
+
 .seaArea .wave1,
-.wave2,
-.wave3 {
+.seaArea .wave2,
+.seaArea .wave3 {
   max-width: 1785px;
   position: absolute;
 }
 
 .seaArea .wave1 {
-  bottom: 145px;
+  bottom: 180px;
   left: -266px;
   z-index: 2;
+  animation: waveAnimation1 53s ease-in-out infinite;
 }
 
 .seaArea .wave2 {
-  bottom: 70px;
+  bottom: 75px;
   left: -290px;
+  z-index: 100;
+  animation: waveAnimation2 43s ease-in-out infinite;
 }
 
 .seaArea .wave3 {
-  bottom: 0;
+  bottom: 0px;
   left: -266px;
   z-index: 250;
+  animation: waveAnimation3 35s ease-in-out infinite;
 }
 
 .seaArea h1 {
   font-size: 28px;
   color: #06436b;
-  letter-spacing: 3.5px;
+  letter-spacing: 5px;
   margin-top: 90px;
   margin-bottom: 80px;
 }
+
 /* ---------seaArea_menuSec-------- */
 
 .menuSec img {
@@ -110,7 +153,7 @@ h1 {
 .menuSec2Box2,
 .menuSec2Box3 {
   position: relative;
-  z-index: 300;
+  z-index: 50;
 }
 
 .menuSec2 .menuContentNiku {
