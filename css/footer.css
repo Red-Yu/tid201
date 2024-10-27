@@ -49,17 +49,19 @@ footer .container {
   line-height: 250%;
 }
 
-.imgLeft {
-  position: absolute;
-  left: -25px;
-  top: 0px;
-  z-index: 2;
-}
+.imgLeft,
 .imgRight {
   position: absolute;
-  right: -25px;
   top: 0px;
   z-index: 2;
+  transition: transform 1s ease;
+}
+
+.imgLeft {
+  left: -4%;
+}
+.imgRight {
+  right: -4%;
 }
 
 .imgLeft img,
