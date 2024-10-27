@@ -16,6 +16,7 @@ footer {
   height: 391px;
   position: relative;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .copyright {
@@ -50,20 +51,22 @@ footer .container {
 
 .imgLeft {
   position: absolute;
-  left: -5px;
-  top: 0;
-  max-width: 100%; /* 確保圖片不超出容器 */
-  height: auto; /* 自動調整高度 */
+  left: -25px;
+  top: 0px;
   z-index: 2;
 }
 .imgRight {
   position: absolute;
-  right: -5px; /* 使用 right 來確保圖片在右邊 */
-  top: 0;
-  max-width: 100%; /* 確保圖片不超出容器 */
-  height: auto; /* 自動調整高度 */
+  right: -25px;
+  top: 0px;
   z-index: 2;
 }
+
+.imgLeft img,
+.imgRight img {
+  width: 520px;
+}
+
 .bgImg {
   background-image: url(../assets/footer/footer\ logo.png);
   width: 100%;
@@ -72,7 +75,7 @@ footer .container {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  top: -10px;
+  /* top: -10px; */
   z-index: 1;
 }
 .goToTop img {
