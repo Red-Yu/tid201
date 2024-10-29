@@ -58,15 +58,15 @@ footer .container {
 }
 
 .imgLeft {
-  left: -4%;
+  left: -20%;
 }
 .imgRight {
-  right: -4%;
+  right: -20%;
 }
 
 .imgLeft img,
 .imgRight img {
-  width: 520px;
+  width: 1020px;
 }
 
 .bgImg {
