@@ -41,17 +41,6 @@ function doFirst() {
       video.currentTime = 0; // 可以選擇重置到視頻的開始
     });
   });
-
-  // 獲取 goToTop 元素
-  const goToTopButton = document.querySelector(".goToTop");
-
-  // 添加點擊事件監聽器
-  goToTopButton.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0, // 滾動到頁面頂部
-      behavior: "smooth", // 平滑滾動
-    });
-  });
 }
 
 window.addEventListener("load", doFirst);

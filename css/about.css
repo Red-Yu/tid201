@@ -33,14 +33,20 @@ h1 {
 }
 
 .mainImg .img1,
-.img2,
-.img3,
-.img4,
-.img5 {
+.mainImg .img2,
+.mainImg .img3,
+.mainImg .img4,
+.mainImg .img5 {
   width: 100%;
   height: auto;
   position: absolute;
+  opacity: 0;
 }
+
+.mainImg .img1 {
+  opacity: 1;
+}
+
 .mainImgContent {
   position: absolute;
   transform: translate(-50%);

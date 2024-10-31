@@ -38,6 +38,17 @@ $(function () {
       $(".imgRight").css("transform", "translateX(" + originalOffset + "px)");
     }
   });
+
+  // 獲取 goToTop 元素
+  const goToTopButton = document.querySelector(".goToTop");
+
+  // 添加點擊事件監聽器
+  goToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0, // 滾動到頁面頂部
+      behavior: "smooth", // 平滑滾動
+    });
+  });
 });
 
 // -------------------gsap-------------------
