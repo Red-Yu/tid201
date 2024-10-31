@@ -29,6 +29,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simasushi_index</title>
+
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
   </head>
   <body>
     <header>
@@ -104,31 +107,50 @@
     <div class="banner">
       <h1>オススメ情報</h1>
       <div class="bannerSec">
-        
-
-        <div class="sliderBoard">
-          <div class="bannerContent">
-           <img src="./assets/banner/banner1.jpg" alt="" class="banner1">
-            <img src="./assets/banner/banner2.jpg" alt="" class="banner2">
-            <img src="./assets/banner/banner3.jpg" alt="" class="banner3">
-            <img src="./assets/banner/banner1.jpg" alt="" class="banner4">
-           <img src="./assets/banner/banner2.jpg" alt="" class="banner5">
-           <img src="./assets/banner/banner3.jpg" alt="" class="banner6">
-          </div>
-
+        <div class="sliderFor">
+          <div><img src="./assets/banner/banner1.jpg" alt="" /></div>
+          <div><img src="./assets/banner/banner2.jpg" alt="" /></div>
+          <div><img src="./assets/banner/banner3.jpg" alt="" /></div>
+          <div><img src="./assets/banner/banner1.jpg" alt="" /></div>
+          <div><img src="./assets/banner/banner2.jpg" alt="" /></div>
+          <div><img src="./assets/banner/banner3.jpg" alt="" /></div>
         </div>
 
-
-        <div class="contentButton">
-          <img src="./assets/banner/banner1.jpg" alt="" class="banner1">
-          <img src="./assets/banner/banner2.jpg" alt="" class="banner2">
-          <img src="./assets/banner/banner3.jpg" alt="" class="banner3">
-          <img src="./assets/banner/banner1.jpg" alt="" class="banner4">
-          <img src="./assets/banner/banner2.jpg" alt="" class="banner5">
-          <img src="./assets/banner/banner3.jpg" alt="" class="banner6">
+        <div class="sliderNav">
+          <div><img src="./assets/banner/banner1.jpg" alt="" /></div>
+          <div><img src="./assets/banner/banner2.jpg" alt="" /></div>
+          <div><img src="./assets/banner/banner3.jpg" alt="" /></div>
+          <div><img src="./assets/banner/banner1.jpg" alt="" /></div>
+          <div><img src="./assets/banner/banner2.jpg" alt="" /></div>
+          <div><img src="./assets/banner/banner3.jpg" alt="" /></div>
         </div>
       </div>
     </div>
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/slick.js"></script>
+    <script>
+      $(".sliderFor").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: ".sliderNav",
+      });
+      $(".sliderNav").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: ".sliderFor",
+        dots: true,
+        centerMode: true,
+        centerPadding: "90px",
+        focusOnSelect: true,
+        autoplay: true, // 啟用自動播放
+        autoplaySpeed: 3000, // 設定每張圖片顯示的時間（毫秒）
+        infinite: true, // 使滑塊無限循環
+        speed: 500, // 切換速度（毫秒）
+      });
+    </script>
 
     <!-- --------------bigNews----------------- -->
 
@@ -401,32 +423,28 @@
       <h1>おすすめ情報</h1>
       <div class="container">
         <div class="image-wrapper">
-        <img src="./assets/banner/首頁banner2_工作區域 1.jpg" alt="" />
-        <div class="overlay"></div>
-      </div>
-      <div class="image-wrapper">
-      <img src="./assets/banner/主banner_工作區域 1.jpg" alt="" />
-      <div class="overlay"></div>
-    </div> 
-    <div class="image-wrapper">
-     <img src="./assets/banner/banner３_工作區域 1 複本.jpg" alt="" />
-     <div class="overlay"></div>
-    </div> 
-    <div class="image-wrapper">
-     <img src="./assets/banner/banner３_工作區域 1 複本.jpg" alt="" />
-     <div class="overlay"></div>
-    </div>
-    <div class="image-wrapper">
-     <img src="./assets/banner/首頁banner2_工作區域 1.jpg" alt="" />
-     <div class="overlay"></div>
-    </div>
-    <div class="image-wrapper">
-     <img src="./assets/banner/主banner_工作區域 1.jpg" alt="" />
-     <div class="overlay"></div>
-    
-    </div>
-
-        
+          <img src="./assets/banner/banner1.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="image-wrapper">
+          <img src="./assets/banner/banner2.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="image-wrapper">
+          <img src="./assets/banner/banner3.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="image-wrapper">
+          <img src="./assets/banner/banner3.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="image-wrapper">
+          <img src="./assets/banner/banner1.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="image-wrapper">
+          <img src="./assets/banner/banner2.jpg" alt="" />
+          <div class="overlay"></div>
         </div>
       </div>
     </div>

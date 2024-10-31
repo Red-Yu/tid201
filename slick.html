@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slick</title>
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+  </head>
+  <style>
+    .sliderFor img {
+      margin: auto;
+      width: 970px;
+    }
+
+    .sliderNav img {
+      margin: auto;
+      width: 200px;
+      margin-top: 10px;
+    }
+
+    .sliderNav {
+      width: 100%;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <div class="sliderFor">
+      <div><img src="./assets/banner/banner1.jpg" alt="" /></div>
+      <div><img src="./assets/banner/banner2.jpg" alt="" /></div>
+      <div><img src="./assets/banner/banner3.jpg" alt="" /></div>
+      <div><img src="./assets/banner/banner1.jpg" alt="" /></div>
+      <div><img src="./assets/banner/banner2.jpg" alt="" /></div>
+      <div><img src="./assets/banner/banner3.jpg" alt="" /></div>
+    </div>
+
+    <div class="sliderNav">
+      <div><img src="./assets/banner/banner1.jpg" alt="" /></div>
+      <div><img src="./assets/banner/banner2.jpg" alt="" /></div>
+      <div><img src="./assets/banner/banner3.jpg" alt="" /></div>
+      <div><img src="./assets/banner/banner1.jpg" alt="" /></div>
+      <div><img src="./assets/banner/banner2.jpg" alt="" /></div>
+      <div><img src="./assets/banner/banner3.jpg" alt="" /></div>
+    </div>
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/slick.js"></script>
+    <script>
+      $(".sliderFor").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: ".sliderNav",
+      });
+      $(".sliderNav").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: ".sliderFor",
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true,
+      });
+    </script>
+  </body>
+</html>
