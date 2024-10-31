@@ -96,13 +96,32 @@ p {
 .bannerSec {
   background-color: #06436b;
   width: 100%;
-  height: 450px;
+  height: 550px;
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.bannerSec img {
+
+.sliderBoard {
   margin: auto;
   width: 970px;
+  height: 419px;
+}
+
+.bannerContent {
+  display: flex;
+}
+
+.bannerSec .bannerContent img {
+  margin: auto;
+  width: 970px;
+}
+
+.bannerSec .contentButton img {
+  margin: auto;
+  width: 200px;
+  margin-top: 10px;
 }
 
 /* ----------bigNews---------- */
