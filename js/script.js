@@ -9,6 +9,8 @@ function updateImagePositions() {
 $(window).on("resize", updateImagePositions);
 $(document).ready(updateImagePositions); // 初始調用
 
+// -----------------trigger--------------------
+
 $(function () {
   $(window).scroll(function () {
     let scrollTop = $(this).scrollTop();
@@ -17,13 +19,12 @@ $(function () {
 
     let documentHeight = $(document).height();
     let windowHeight = $(window).height();
-    // let windowWidth = $(window).width();
+    let windowWidth = $(window).width();
 
     let triggerDistance = documentHeight - windowHeight - 150;
-    let moveDistance = 540;
-    // let moveDistance = windowWidth * 0.425;
+    let moveDistance = 570;
+
     let originalOffset = 270;
-    // let originalOffset = windowWidth * 0.2;
 
     if (scrollTop > triggerDistance) {
       // 更新圖像位置
@@ -38,3 +39,32 @@ $(function () {
     }
   });
 });
+
+// -------------------gsap-------------------
+
+// document.addEventListener("DOMContentLoaded", (event) => {
+//   gsap.registerPlugin(ScrollTrigger);
+//   // gsap code here!
+
+//   gsap.to(".imgLeft", {
+//     x: -570, // 向左移動 500px
+//     scrollTrigger: {
+//       trigger: ".imgLeft", // 觸發的元素
+//       start: "top center", // 當這個元素的頂部到達視口中心時開始
+//       end: "bottom center", // 當這個元素的底部到達視口中心時結束
+//       scrub: true, // 平滑的滾動效果
+//       markers: true, // 可選，顯示標記以便調試
+//     },
+//   });
+
+//   gsap.to(".imgRight", {
+//     x: 570, // 向右移動 500px
+//     scrollTrigger: {
+//       trigger: ".imgRight", // 觸發的元素
+//       start: "top center", // 當這個元素的頂部到達視口中心時開始
+//       end: "bottom center", // 當這個元素的底部到達視口中心時結束
+//       scrub: true, // 平滑的滾動效果
+//       markers: true, // 可選，顯示標記以便調試
+//     },
+//   });
+// });
