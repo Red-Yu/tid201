@@ -49,6 +49,15 @@ footer .container {
   line-height: 250%;
 }
 
+footer .container li {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+footer .container li:hover {
+  opacity: 0.7;
+}
+
 .imgLeft,
 .imgRight {
   position: absolute;
@@ -79,15 +88,41 @@ footer .container {
   position: absolute;
   /* top: -10px; */
   z-index: 1;
+  pointer-events: none;
 }
 .goToTop img {
-  width: 202px;
-  /* height: 167px; */
+  width: 180px;
+  cursor: pointer;
   z-index: 1;
   position: absolute;
   top: 35%;
-  left: 66%;
+  left: 70%;
 }
+
+.goToTop img:nth-child(2) {
+  transform-origin: calc(50% + 25px) bottom;
+}
+
+.goToTop img:nth-child(2):hover {
+  animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(-8deg);
+  }
+  66% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .newsCheck {
   width: 800px;
   height: 220px;
@@ -126,7 +161,14 @@ footer .container {
 
   background-color: #06436b;
   position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
+
+.newsCheck .leftBox:hover {
+  background-color: #1d5377;
+}
+
 .newsCheck .leftBox p {
   font-size: 20px;
   margin: auto;
@@ -141,6 +183,7 @@ footer .container {
   bottom: 0;
   left: 40px;
 }
+
 .newsCheck .rightBox {
   width: 360px;
   height: 100px;
@@ -165,4 +208,10 @@ footer .container {
 .newsCheck .rightBox .img img {
   margin: 10px;
   width: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.newsCheck .rightBox img:hover {
+  opacity: 0.7;
 }

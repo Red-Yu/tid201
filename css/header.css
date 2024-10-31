@@ -37,6 +37,7 @@ nav {
   margin-left: 10.5%;
   z-index: 100;
 }
+
 .test {
   background-color: #f06565;
   width: 1200px;
@@ -84,4 +85,8 @@ nav .rightNav ul li:last-child {
 }
 nav ul a:first-child {
   margin-left: 40px;
+}
+
+nav li:hover {
+  opacity: 0.75;
 }
