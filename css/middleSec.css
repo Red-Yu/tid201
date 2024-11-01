@@ -14,26 +14,23 @@ p {
 .sec1Wrapper {
   position: relative;
   height: 1200px;
+  /* border: #ff0000 solid 5px; */
 }
 .mainImg {
   position: relative;
-  height: 964px;
+  height: 100%;
   overflow: hidden;
+  /* border: #ff0000 solid 5px; */
 }
 
 .mainImg .img1,
 .mainImg .img2,
 .mainImg .img3 {
-  width: 100%;
+  width: 120%;
   height: auto;
   position: absolute;
+  top: -210px;
   z-index: 1000;
-}
-
-.mainImg .img1 {
-  width: 1510px;
-  top: -180px;
-  left: -35px;
 }
 
 .mainImg .container {
@@ -54,8 +51,7 @@ p {
 .indexSec2 {
   width: 100%;
   position: absolute;
-  /* height: 500px; */
-  top: 700px;
+  top: 710px;
   z-index: 100;
 }
 .indexSec2 img {
@@ -99,6 +95,7 @@ p {
   letter-spacing: 4.8px;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 70px;
 }
 .bannerSec {
   background-color: #06436b;
