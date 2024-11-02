@@ -55,13 +55,27 @@ h1 {
   color: #fff;
   text-align: center;
   z-index: 100;
-
-  font-family: "Murecho", sans-serif;
+  font-family: "Potta One";
   font-optical-sizing: auto;
-  font-weight: 700;
   font-size: 22px;
   letter-spacing: 3px;
   line-height: 40px;
+}
+
+.mainImgContent .textElement1 {
+  position: absolute;
+  width: 525px;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.mainImgContent .textElement2,
+.mainImgContent .textElement3,
+.mainImgContent .textElement4 {
+  position: absolute;
+  width: 525px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 /* -------------kodawari--------------- */
