@@ -16,6 +16,7 @@ p {
   width: 100%;
   height: 1200px;
   margin-top: 60px;
+  overflow: hidden;
   /* border: #ff0000 solid 5px; */
 }
 .mainImg {
@@ -38,7 +39,7 @@ p {
 
 .mainImg .container {
   position: absolute;
-  top: 8%;
+  top: 7%;
   left: 18%;
   z-index: 400;
 }
@@ -653,4 +654,123 @@ p {
   font-weight: 600;
   font-style: normal;
   margin-left: auto;
+}
+
+/* ----------------RWD--------------------- */
+
+@media screen and (max-width: 1024px) {
+  .sec1Wrapper {
+    height: 1000px;
+  }
+
+  .mainImg .img1,
+  .mainImg .img2,
+  .mainImg .img3 {
+    width: 130%;
+    left: -30px;
+    top: -180px;
+  }
+  .mainImg .container {
+  
+    left: 16%;
+  }
+  .mainImg .container h1 {
+    font-size: 40px;
+  }
+
+  /* ======================== */
+
+  .sec1Wrapper .content1 {
+    top: 520px;
+    width: 400px;
+  }
+  .sec1Wrapper .content2 {
+    top: 760px;
+    width: 350px;
+  }
+.indexSec2{
+  top: 660px;
+}
+
+  @media screen and (max-width: 768px) {
+    .sec1Wrapper {
+      height: 1000px;
+    }
+
+    .mainImg .img1,
+    .mainImg .img2,
+    .mainImg .img3 {
+      width: 150%;
+      left: -150px;
+      top: -150px;
+    }
+    .mainImg .container {
+      top: 6%;
+      left: 14%;
+    }
+    .mainImg .container h1 {
+      font-size: 36px;
+    }
+
+
+    /* ======================= */
+
+    .sec1Wrapper .content1 {
+      top: 450px;
+      width: 310px;
+    }
+    .sec1Wrapper .content2 {
+      top: 700px;
+      width: 280px;
+    }
+  .indexSec2{
+    width: 125%;
+    left: -80px;
+    top: 640px;
+  }
+
+
+
+    @media screen and (max-width: 480px) {
+
+      .sec1Wrapper {
+        height: 1200px;
+      }
+  
+      .mainImg .img1,
+      .mainImg .img2,
+      .mainImg .img3 {
+        width: 180%;
+        left: -205px;
+        top: -100px;
+      }
+      .mainImg .container {
+        /* top: 4%; */
+        /* left: 16%; */
+      }
+      .mainImg .container h1 {
+        font-size: 32px;
+      }
+     /* ======================= */
+
+     .sec1Wrapper .content1 {
+      top: 500px;
+      width: 330px;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+    .sec1Wrapper .content2 {
+      top: 1000px;
+      width: 330px;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+  .indexSec2{
+    width: 200%;
+    left: -50px;
+    top: 600px;
+  }
+
+
+  }
 }

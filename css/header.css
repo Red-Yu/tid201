@@ -157,5 +157,11 @@ nav li:hover {
     .liHide {
       display: none;
     }
+
+    @media screen and (max-width: 480px) {
+      .logo {
+        margin-left: 4%;
+      }
+    }
   }
 }
