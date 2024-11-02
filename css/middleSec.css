@@ -671,7 +671,6 @@ p {
     top: -180px;
   }
   .mainImg .container {
-  
     left: 16%;
   }
   .mainImg .container h1 {
@@ -688,9 +687,9 @@ p {
     top: 760px;
     width: 350px;
   }
-.indexSec2{
-  top: 660px;
-}
+  .indexSec2 {
+    top: 660px;
+  }
 
   @media screen and (max-width: 768px) {
     .sec1Wrapper {
@@ -712,7 +711,6 @@ p {
       font-size: 36px;
     }
 
-
     /* ======================= */
 
     .sec1Wrapper .content1 {
@@ -723,20 +721,17 @@ p {
       top: 700px;
       width: 280px;
     }
-  .indexSec2{
-    width: 125%;
-    left: -80px;
-    top: 640px;
-  }
-
-
+    .indexSec2 {
+      width: 125%;
+      left: -80px;
+      top: 640px;
+    }
 
     @media screen and (max-width: 480px) {
-
       .sec1Wrapper {
         height: 1200px;
       }
-  
+
       .mainImg .img1,
       .mainImg .img2,
       .mainImg .img3 {
@@ -744,33 +739,29 @@ p {
         left: -205px;
         top: -100px;
       }
-      .mainImg .container {
-        /* top: 4%; */
-        /* left: 16%; */
-      }
+
       .mainImg .container h1 {
         font-size: 32px;
       }
-     /* ======================= */
+      /* ======================= */
 
-     .sec1Wrapper .content1 {
-      top: 500px;
-      width: 330px;
-      transform: translateX(-50%);
-      left: 50%;
+      .sec1Wrapper .content1 {
+        top: 500px;
+        width: 330px;
+        transform: translateX(-50%);
+        left: 50%;
+      }
+      .sec1Wrapper .content2 {
+        top: 1000px;
+        width: 330px;
+        transform: translateX(-50%);
+        left: 50%;
+      }
+      .indexSec2 {
+        width: 200%;
+        left: -50px;
+        top: 600px;
+      }
     }
-    .sec1Wrapper .content2 {
-      top: 1000px;
-      width: 330px;
-      transform: translateX(-50%);
-      left: 50%;
-    }
-  .indexSec2{
-    width: 200%;
-    left: -50px;
-    top: 600px;
-  }
-
-
   }
 }
