@@ -5,11 +5,10 @@
 }
 header {
   display: flex;
-  position: fixed;
   width: 100%;
+  position: fixed;
   top: 0;
   z-index: 2000;
-
   /* background-color: #06436b; */
 }
 a {
@@ -42,12 +41,6 @@ nav {
   z-index: 100;
 }
 
-.test {
-  background-color: #f06565;
-  width: 1200px;
-  height: 60px;
-  margin: auto;
-}
 .rightNav {
   background-color: #e3e3e3;
   flex: 93;
@@ -93,4 +86,76 @@ nav ul a:first-child {
 
 nav li:hover {
   opacity: 0.75;
+}
+
+/* -----------sidemenu------------ */
+.sidelist {
+  display: none;
+}
+
+.listContent {
+  display: flex;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  float: left;
+}
+.hamburger span {
+  width: 25px;
+  height: 3.5px;
+  margin: 2.5px 0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transform-origin: left center;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* -------------RWD-------------------- */
+
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 100%;
+  }
+  .leftNav {
+    flex: 1;
+    width: 100%;
+    background-color: #06436b;
+  }
+  .rightNav {
+    display: none;
+  }
+  .navlist {
+    display: none;
+  }
+  .logo {
+    margin-left: 6%;
+  }
+  .sidelist {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .hamburger {
+    margin-right: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .liHide {
+      display: none;
+    }
+  }
 }

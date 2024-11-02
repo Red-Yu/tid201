@@ -23,6 +23,7 @@
       rel="stylesheet"
     />
     <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/header.js"></script>
     <script src="./js/about.js"></script>
     <script src="./js/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -38,11 +39,23 @@
           <a href="./index.html" class="logo">
             <img src="./assets/logo/logo.jpg" alt="" width="85px" />
           </a>
-          <ul>
+          <ul class="navlist">
             <a href="./about.html"> <li>こだわり</li></a>
             <a href="./menu.html"> <li>メニュー</li></a>
             <a href=""><li>トピックス</li></a>
             <a href=""><li>お持ち帰り</li></a>
+          </ul>
+          <ul class="sidelist">
+            <div class="listContent">
+              <a href="./about.html"> <li>こだわり</li></a>
+              <a href="./menu.html"> <li>メニュー</li></a>
+              <a href=""><li class="liHide">トピックス</li></a>
+            </div>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </ul>
         </div>
         <div class="rightNav">
