@@ -26,6 +26,10 @@ h1 {
 
 /* --------seaArea--------- */
 
+.seaArea {
+  margin-top: 40px;
+}
+
 .seaWrapper {
   width: 100%;
   height: 760px;
@@ -108,8 +112,8 @@ h1 {
   font-size: 28px;
   color: #06436b;
   letter-spacing: 5px;
-  margin-top: 90px;
-  margin-bottom: 80px;
+  margin-top: 80px;
+  margin-bottom: 95px;
 }
 
 /* ---------seaArea_menuSec-------- */

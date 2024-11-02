@@ -25,6 +25,10 @@ h1 {
 
 /* -------------mainImg--------------- */
 
+.mainImg {
+  margin-top: 60px;
+}
+
 .mainImg .wrapper {
   position: relative;
   /* height: 200vh; */

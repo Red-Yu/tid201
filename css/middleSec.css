@@ -14,6 +14,7 @@ p {
 .sec1Wrapper {
   position: relative;
   height: 1200px;
+  margin-top: 60px;
   /* border: #ff0000 solid 5px; */
 }
 .mainImg {

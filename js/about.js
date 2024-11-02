@@ -140,7 +140,7 @@ function doFirst() {
 
   let images = gsap.utils.toArray(".fade-img");
   let pinElement = document.querySelector(".mainImg");
-  let triggerDistance = 1600;
+  let triggerDistance = 1000;
 
   // 初始化所有图片的透明度为0，除了img1
   images.forEach((img, i) => {

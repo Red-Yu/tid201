@@ -15,7 +15,7 @@ function doFirst() {
   gsap.to(".img1", {
     scale: 1.3,
     x: "-15%", // 最終移動到左側
-    y: "33%", // 最終移動到下方
+    y: "39%", // 最終移動到下方
     scrollTrigger: {
       trigger: ".mainImg", // 當這個元素進入視口時觸發
       start: "top top", // 當容器的上邊緣進入視口的上邊緣
