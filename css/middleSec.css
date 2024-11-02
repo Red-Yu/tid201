@@ -11,6 +11,10 @@ p {
   font-style: normal;
 }
 
+.bodyWrapper {
+  max-width: 1440px;
+}
+
 .sec1Wrapper {
   position: relative;
   width: 100%;
@@ -104,7 +108,7 @@ p {
 .bannerSec {
   background-color: #06436b;
   width: 100%;
-  height: 572px;
+  height: auto;
   /* margin-top: 20px; */
   /* display: flex;
   flex-direction: column;
@@ -117,14 +121,15 @@ p {
 
 .sliderFor img {
   margin: auto;
-  margin-top: 20px;
-  width: 950px;
+  margin-top: 15px;
+  width: 75%;
 }
 
 .sliderNav img {
   margin: auto;
-  width: 200px;
+  width: 94%;
   margin-top: 15px;
+  margin-bottom: 10px;
   /* margin-bottom: 20px; */
 }
 
@@ -138,6 +143,7 @@ p {
 .bigNews .wrapper {
   display: flex;
   justify-content: center;
+  margin: 0 30px;
 }
 .bigNews .leftBox {
   background-color: #06436b;
@@ -145,6 +151,9 @@ p {
   height: 315px;
   margin-top: 70px;
   border-radius: 12px 0 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bigNews .rightBox {
   border: #06436b solid 4px;
@@ -155,7 +164,6 @@ p {
 }
 
 .bigNews .leftBox .content {
-  height: 315px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +221,8 @@ p {
 
 .menu .wrapper {
   margin: auto;
-  width: 1035px;
+  max-width: 1035px;
+  width: 100%;
   height: 950px;
 }
 
@@ -245,6 +254,9 @@ p {
   top: -15px;
   right: 15px;
   cursor: pointer;
+}
+.menu .menuContent.menuContentGunkan {
+  width: 83px;
 }
 
 .menu .sushi {
@@ -306,8 +318,8 @@ p {
 .menu .bottomContainer {
   display: flex;
   justify-content: center;
-
-  width: 1035px;
+  max-width: 1035px;
+  width: 100%;
 }
 
 .menu .menuLeftRight {
@@ -691,6 +703,50 @@ p {
     top: 660px;
   }
 
+  /* ----------menu---------- */
+  .menu .wrapper {
+    max-width: 780px;
+  }
+
+  .boxLimit,
+  .boxNigiri,
+  .boxMeat,
+  .boxGunkan {
+    width: 180px;
+  }
+
+  .menu video {
+    width: 180px;
+  }
+
+  .menu .menuContent {
+    width: 32px;
+  }
+
+  .menu .menuContent.menuContentGunkan {
+    width: 72px;
+  }
+
+  .menu .sushi {
+    top: 180px;
+    width: 150px;
+  }
+  .menu button {
+    top: 280px;
+  }
+  .menu .topContainer {
+    height: 400px;
+  }
+
+  .boxSideMenu,
+  .boxSet {
+    width: 180px;
+  }
+
+  .boxTakeout video {
+    width: 388.33px;
+  }
+
   @media screen and (max-width: 768px) {
     .sec1Wrapper {
       height: 1000px;
@@ -727,6 +783,55 @@ p {
       top: 640px;
     }
 
+    /* ------------menu--------- */
+
+    .menu .wrapper h1 {
+      font-size: 36px;
+    }
+
+    .menu .wrapper {
+      max-width: 680px;
+    }
+
+    .boxLimit,
+    .boxNigiri,
+    .boxMeat,
+    .boxGunkan {
+      width: 150px;
+    }
+
+    .menu video {
+      width: 150px;
+    }
+
+    .menu .menuContent {
+      width: 28px;
+    }
+
+    .menu .menuContent.menuContentGunkan {
+      width: 61px;
+    }
+
+    .menu .sushi {
+      top: 150px;
+      width: 120px;
+    }
+    .menu button {
+      top: 240px;
+    }
+    .menu .topContainer {
+      height: 350px;
+    }
+
+    .boxSideMenu,
+    .boxSet {
+      width: 150px;
+    }
+
+    .boxTakeout video {
+      width: 358.33px;
+    }
+
     @media screen and (max-width: 480px) {
       .sec1Wrapper {
         height: 1200px;
@@ -761,6 +866,34 @@ p {
         width: 200%;
         left: -50px;
         top: 600px;
+      }
+      /* ----------banner----------- */
+      .banner h1 {
+        font-size: 32px;
+      }
+
+      /* ------------bigNews----------- */
+
+      .bigNews .wrapper {
+        flex-direction: column;
+      }
+      .bigNews .leftBox {
+        margin: auto;
+        margin-top: 50px;
+        width: 90%;
+        height: 45px;
+        border-radius: 12px 12px 0 0;
+      }
+      .bigNews .rightBox {
+        margin: auto;
+        width: 90%;
+        border-radius: 0 0 12px 12px;
+      }
+
+      /* ------------menu--------- */
+
+      .menu .wrapper h1 {
+        font-size: 32px;
       }
     }
   }
