@@ -140,7 +140,28 @@ function doFirst() {
 
   let images = gsap.utils.toArray(".fade-img");
   let pinElement = document.querySelector(".mainImg");
-  let triggerDistance = 1000;
+  let triggerDistance;
+
+  // 根據窗口寬度設置 triggerDistance
+  function updateTriggerDistance() {
+    let windowWidth = window.innerWidth;
+
+    if (windowWidth < 480) {
+      triggerDistance = 450; // 小於480px時的觸發距離
+    } else if (windowWidth < 768) {
+      triggerDistance = 600; // 在480px到768px之間的觸發距離
+    } else if (windowWidth < 1024) {
+      triggerDistance = 800; // 在768px到1024px之間的觸發距離
+    } else {
+      triggerDistance = 1000; // 大於或等於1024px時的觸發距離
+    }
+  }
+
+  // 初始設置
+  updateTriggerDistance();
+
+  // 當窗口大小改變時更新 triggerDistance
+  window.addEventListener("resize", updateTriggerDistance);
 
   // 初始化所有图片的透明度为0，除了img1
   images.forEach((img, i) => {

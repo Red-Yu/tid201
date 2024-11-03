@@ -23,6 +23,11 @@ h1 {
   margin-bottom: 30px;
 }
 
+.bodyWrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+
 /* -------------mainImg--------------- */
 
 .mainImg {
@@ -32,7 +37,7 @@ h1 {
 .mainImg .wrapper {
   position: relative;
   /* height: 200vh; */
-  height: 579px;
+  height: 520px;
   margin-bottom: 50px;
 }
 
@@ -484,4 +489,66 @@ h1 {
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.77);
   line-height: 175%; /* 35px */
   letter-spacing: 2px;
+}
+
+/* -----------RWD------------- */
+
+@media screen and (max-width: 1024px) {
+  .mainImgContent {
+    top: 120px;
+  }
+  .mainImg .img1,
+  .mainImg .img2,
+  .mainImg .img3,
+  .mainImg .img4,
+  .mainImg .img5 {
+    top: 20px;
+  }
+
+  .mainImg .wrapper {
+    height: 400px;
+  }
+  @media screen and (max-width: 768px) {
+    .mainImgContent {
+      top: 110px;
+    }
+
+    .mainImg .img1,
+    .mainImg .img2,
+    .mainImg .img3,
+    .mainImg .img4,
+    .mainImg .img5 {
+      top: 50px;
+    }
+
+    .mainImg .wrapper {
+      height: 380px;
+    }
+    @media screen and (max-width: 480px) {
+      .mainImgContent {
+        line-height: 32px;
+        font-size: 20px;
+        top: 140px;
+      }
+
+      .mainImgContent .textElement4 {
+        font-size: 18px;
+        width: 250px;
+      }
+
+      .mainImg .img1,
+      .mainImg .img2,
+      .mainImg .img3,
+      .mainImg .img4,
+      .mainImg .img5 {
+        width: 110%;
+        left: -22px;
+        top: 150px;
+      }
+
+      .mainImg .wrapper {
+        height: 380px;
+      }
+    }
+  }
 }
