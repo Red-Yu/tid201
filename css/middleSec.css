@@ -859,34 +859,34 @@ p {
     }
 
     .menu .wrapper {
-      max-width: 680px;
+      /* max-width: 750px; */
     }
 
     .boxLimit,
     .boxNigiri,
     .boxMeat,
     .boxGunkan {
-      width: 150px;
+      width: 170px;
     }
 
     .menu video {
-      width: 150px;
+      width: 170px;
     }
 
     .menu .menuContent {
-      width: 28px;
+      width: 30px;
     }
 
     .menu .menuContent.menuContentGunkan {
-      width: 61px;
+      width: 63px;
     }
 
     .menu .sushi {
-      top: 150px;
-      width: 120px;
+      top: 170px;
+      width: 140px;
     }
     .menu button {
-      top: 240px;
+      top: 260px;
     }
     .menu .topContainer {
       height: 350px;
@@ -894,11 +894,11 @@ p {
 
     .boxSideMenu,
     .boxSet {
-      width: 150px;
+      width: 170px;
     }
 
     .boxTakeout video {
-      width: 330.33px;
+      width: 350.33px;
     }
 
     /* ------------kodawari----------------- */
@@ -1036,8 +1036,8 @@ p {
       }
 
       .menu .wrapper {
-        max-width: 335px;
-        height: 1200px;
+        max-width: 380px;
+        height: 1400px;
       }
 
       .boxLimit,
@@ -1051,11 +1051,11 @@ p {
       }
 
       .topContainer .menuRight {
-        margin-top: 250px;
+        margin-top: 245px;
       }
 
       .menu .topContainer {
-        height: 350px;
+        height: 450px;
       }
 
       .menu .bottomContainer {
@@ -1064,7 +1064,7 @@ p {
       }
 
       .bottomContainer .menuLeftRight {
-        max-width: 335px;
+        max-width: 380px;
         display: flex;
         justify-content: space-around;
       }
@@ -1078,7 +1078,7 @@ p {
       }
 
       .boxTakeout video {
-        max-width: 317.5px;
+        max-width: 347.5px;
       }
 
       .menuMiddle {
@@ -1089,7 +1089,7 @@ p {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 350px;
+        top: 400px;
       }
     }
   }
