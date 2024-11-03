@@ -1033,11 +1033,12 @@ p {
 
       .menu .wrapper h1 {
         font-size: 32px;
+        margin-top: 80px;
       }
 
       .menu .wrapper {
         max-width: 380px;
-        height: 1400px;
+        height: 1350px;
       }
 
       .boxLimit,
@@ -1090,6 +1091,64 @@ p {
         left: 50%;
         transform: translateX(-50%);
         top: 400px;
+      }
+
+      /* ------------kodawari----------------- */
+
+      .korawari {
+        width: 100%;
+        height: 1000px;
+      }
+      .korawari .wrapper h1 {
+        font-size: 32px;
+        margin: 30px 0 220px 0;
+      }
+
+      .korawari .fourBox {
+        max-width: 380px;
+      }
+
+      .neta,
+      .syari {
+        width: 80px;
+      }
+      .tennaicyouri,
+      .syouyu {
+        width: 65px;
+      }
+
+      .korawari .moreButtom .button {
+        font-size: 14px;
+        padding: 3px 18px;
+        margin-top: 240px;
+      }
+      .korawari .backgroundPic {
+        max-width: 480px;
+        width: 100%;
+        top: 170px;
+      }
+
+      .korawari .backgroundPic .tennaicyouriPic {
+        width: 300px;
+        top: 110px;
+        left: -20px;
+      }
+
+      .korawari .backgroundPic .syouyuPic {
+        width: 300px;
+        right: -30px;
+        bottom: 120px;
+      }
+
+      .korawari .backgroundPic .netaPic {
+        width: 200px;
+        top: 20px;
+        right: 20px;
+      }
+      .korawari .backgroundPic .syariPic {
+        width: 200px;
+        bottom: 20px;
+        left: 25px;
       }
     }
   }
