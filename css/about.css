@@ -221,6 +221,7 @@ h1 {
 .netaContainer .pattenBg {
   width: 830px;
   position: absolute;
+  z-index: 1000;
 }
 
 .netaContent h4 {
@@ -237,6 +238,13 @@ h1 {
   left: 200px;
 }
 
+.pContent {
+  position: absolute;
+  top: 180px;
+  left: 200px;
+  z-index: 110;
+}
+
 .netaContent p {
   color: #06436b;
   font-family: "Murecho", sans-serif;
@@ -245,11 +253,7 @@ h1 {
   font-size: 15px;
   font-weight: 900;
   letter-spacing: 2px;
-  position: absolute;
   line-height: 23px;
-  z-index: 110;
-  top: 180px;
-  left: 200px;
 }
 
 /* --------introductionNeta2-------- */
@@ -349,7 +353,6 @@ h1 {
   height: 280px;
   background-color: #ffffff;
   position: absolute;
-
   top: 300px;
   border-top: #06436b solid 10px;
   border-bottom: #06436b solid 10px;
@@ -376,9 +379,7 @@ h1 {
   position: absolute;
   line-height: 23px;
   z-index: 110;
-
   top: 125px;
-
   width: 780px;
 }
 
@@ -529,6 +530,116 @@ h1 {
     width: 110px;
   }
 
+  /* ---------------introduction----------------- */
+
+  .introduction {
+    height: 1500px;
+  }
+
+  .introductionSec1 {
+    height: 700px;
+  }
+
+  .introduction h1 {
+    font-size: 40px;
+  }
+
+  .introductionNeta {
+    max-width: 800px;
+  }
+
+  .introductionNeta video {
+    width: 600px;
+  }
+
+  .netaContainer {
+    width: 730px;
+    height: 321px;
+    top: 270px;
+  }
+
+  .netaContainer .maguro {
+    width: 60px;
+    left: 51px;
+    top: 95px;
+  }
+
+  .netaContainer .pattenBg {
+    width: 730px;
+  }
+
+  .netaContent h4 {
+    top: 90px;
+    left: 130px;
+  }
+
+  .pContent {
+    top: 140px;
+    left: 130px;
+  }
+
+  /* --------introductionNeta2-------- */
+
+  .introduction2 {
+    height: 780px;
+  }
+
+  .introductionNeta2 {
+    max-width: 800px;
+  }
+  .introductionNeta2 video {
+    width: 600px;
+  }
+  .introductionNeta2 .netaContainer2 {
+    width: 730px;
+    height: 321px;
+    top: 270px;
+  }
+
+  .netaContainer2 .samon {
+    width: 60px;
+    right: 52px;
+    top: 100px;
+  }
+
+  .netaContainer2 .pattenBg {
+    width: 730px;
+  }
+
+  .netaContent2 h4 {
+    top: 90px;
+    left: 60px;
+  }
+
+  .netaContent2 p {
+    top: 140px;
+    left: 60px;
+  }
+
+  /* ------------introduction2------------ */
+  .introduction2 h1 {
+    font-size: 40px;
+  }
+
+  .introductionSyari video {
+    width: 600px;
+  }
+
+  .syariContainer {
+    top: 270px;
+    width: 850px;
+    height: 280px;
+  }
+
+  .syariContainer .syariBg {
+    width: 850px;
+  }
+
+  .syariContent p {
+    top: 100px;
+    width: 650px;
+  }
+
   @media screen and (max-width: 768px) {
     .mainImgContent {
       top: 140px;
@@ -566,6 +677,125 @@ h1 {
     .tennaicyouri,
     .syouyu {
       width: 100px;
+    }
+
+    /* ---------------introduction----------------- */
+
+    .introduction {
+      height: 1500px;
+    }
+
+    .introductionSec1 {
+      height: 700px;
+    }
+
+    .introduction h1 {
+      font-size: 32px;
+    }
+
+    .introductionNeta {
+      max-width: 700px;
+    }
+
+    .introductionNeta video {
+      width: 530px;
+    }
+
+    .netaContainer {
+      width: 630px;
+      height: 280px;
+      top: 240px;
+      left: 30px;
+    }
+
+    .netaContainer .maguro {
+      width: 50px;
+      left: 44px;
+      top: 85px;
+    }
+
+    .netaContainer .pattenBg {
+      width: 630px;
+    }
+
+    .netaContent h4 {
+      top: 70px;
+      left: 110px;
+      font-size: 24px;
+    }
+
+    .pContent {
+      top: 120px;
+      left: 110px;
+    }
+
+    .netaContent p {
+      font-size: 12px;
+    }
+
+    /* --------introductionNeta2-------- */
+
+    .introduction2 {
+      height: 780px;
+    }
+
+    .introductionNeta2 {
+      max-width: 700px;
+    }
+    .introductionNeta2 video {
+      width: 530px;
+    }
+    .introductionNeta2 .netaContainer2 {
+      width: 630px;
+      height: 280px;
+      top: 240px;
+    }
+
+    .netaContainer2 .samon {
+      width: 50px;
+      right: 46px;
+      top: 90px;
+    }
+
+    .netaContainer2 .pattenBg {
+      width: 630px;
+    }
+
+    .netaContent2 h4 {
+      font-size: 24px;
+      top: 75px;
+      left: 30px;
+    }
+
+    .netaContent2 p {
+      top: 125px;
+      left: 30px;
+      font-size: 12px;
+      width: 500px;
+    }
+
+    /* ------------introduction2------------ */
+    .introduction2 h1 {
+      font-size: 40px;
+    }
+
+    .introductionSyari video {
+      width: 600px;
+    }
+
+    .syariContainer {
+      top: 270px;
+      width: 850px;
+      height: 280px;
+    }
+
+    .syariContainer .syariBg {
+      width: 850px;
+    }
+
+    .syariContent p {
+      top: 100px;
+      width: 650px;
     }
 
     @media screen and (max-width: 480px) {
