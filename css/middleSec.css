@@ -526,7 +526,9 @@ p {
 /* ---------osusume---------- */
 
 .osusume {
+  /* max-width: 1035px; */
   width: 1035px;
+  overflow: hidden;
   margin: auto;
 }
 
@@ -545,11 +547,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 7.5px;
-  margin-bottom: 7.5px;
+  /* margin-bottom: 7.5px; */
   position: relative;
+  justify-content: center;
 }
 
 .osusume img {
+  /* max-width: 340px; */
   width: 340px;
   cursor: pointer;
 }
@@ -584,6 +588,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
 .topics h1 {
@@ -599,23 +604,25 @@ p {
 }
 
 .topicsContainer {
-  width: 1035px;
+  max-width: 1035px;
+  width: 100%;
   height: 400px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: auto;
+  overflow-x: hidden;
   margin-bottom: 50px;
 }
 
 .topicsContainer .date,
-.content {
+.topicsContainer .content {
   color: black;
 }
 
 .topicBar {
-  width: 950px;
+  width: 90%;
   display: flex;
   align-items: center;
   padding: 25px 20px 25px 0;
@@ -624,7 +631,6 @@ p {
 }
 
 .topicsContainer .date {
-  /* margin-right: 30px; */
   font-weight: 500;
   margin-right: 30px;
   font-size: 16px;
@@ -671,7 +677,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.08em;
-  width: 600px;
+  width: 50%;
 }
 
 .topicsContainer .topicBar span {
@@ -682,6 +688,7 @@ p {
   font-weight: 600;
   font-style: normal;
   margin-left: auto;
+  padding-left: 30px;
 }
 
 /* ----------------RWD--------------------- */
@@ -814,6 +821,12 @@ p {
     bottom: 50px;
   }
 
+  /* --------------osusume-------------- */
+
+  .osusume {
+    width: 100%;
+  }
+
   @media screen and (max-width: 768px) {
     .sec1Wrapper {
       height: 1000px;
@@ -856,10 +869,6 @@ p {
 
     .menu .wrapper h1 {
       font-size: 36px;
-    }
-
-    .menu .wrapper {
-      /* max-width: 750px; */
     }
 
     .boxLimit,
@@ -958,6 +967,21 @@ p {
       left: 55px;
     }
 
+    /* --------------osusume-------------- */
+
+    .osusume h1 {
+      font-size: 36px;
+    }
+
+    .osusume img {
+      width: 280px;
+    }
+
+    .osusume .overlay {
+      width: 280px;
+      height: 121px;
+    }
+
     @media screen and (max-width: 480px) {
       .sec1Wrapper {
         height: 1200px;
@@ -977,7 +1001,7 @@ p {
       /* ======================= */
 
       .sec1Wrapper .content1 {
-        top: 560px;
+        top: 540px;
         width: 330px;
         transform: translateX(-50%);
         left: 50%;
@@ -1149,6 +1173,57 @@ p {
         width: 200px;
         bottom: 20px;
         left: 25px;
+      }
+      /* --------------osusume-------------- */
+
+      .osusume h1 {
+        font-size: 32px;
+      }
+      .osusume img {
+        width: 180px;
+      }
+
+      .osusume .overlay {
+        width: 180px;
+        height: 79px;
+      }
+
+      /* --------------topics------------- */
+
+      .topicsContainer .topicBar span {
+        display: none;
+      }
+
+      /* .topicBar {
+        display: block;
+      }
+
+      .topicsContainer .date {
+        display: inline;
+      } */
+      .topicBar {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .topicsContainer .content {
+        margin-top: 10px;
+        width: 100%;
+      }
+      .topicsContainer .date {
+        margin-right: 15px;
+      }
+      .category,
+      .categoryImportant,
+      .categoryMenu {
+        font-size: 14px;
+        padding: 2px;
+        margin-right: 0;
+        padding-bottom: 2px;
+        width: 8em;
+      }
+      .topicBar:nth-child(3) {
+        flex-basis: 100%;
       }
     }
   }
