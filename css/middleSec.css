@@ -13,6 +13,7 @@ p {
 
 .bodyWrapper {
   max-width: 1440px;
+  margin: auto;
 }
 
 .sec1Wrapper {
@@ -323,9 +324,9 @@ p {
 }
 
 .menu .menuLeftRight {
-  width: 1005.5px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .boxSideMenu,
@@ -337,7 +338,7 @@ p {
 }
 
 .boxTakeout video {
-  width: 458.33px;
+  width: 488.33px;
   position: relative;
 }
 .boxTakeout {
@@ -347,8 +348,20 @@ p {
 
 /* ---------kodawari---------- */
 
+.korawari {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  overflow: hidden;
+  /* background-color: #ffcf10; */
+}
+
 .korawari .wrapper {
-  width: 1035px;
+  /* max-width: 1035px; */
+  width: 100%;
   /* height: 700px; */
   /* background-color: #cdcdcd; */
   margin: auto;
@@ -363,7 +376,7 @@ p {
   font-weight: 400;
   letter-spacing: 4.8px;
   text-align: center;
-  margin: 120px 0 70px 0;
+  margin: 30px 0 70px 0;
   position: relative;
   z-index: 300;
 }
@@ -378,7 +391,8 @@ p {
 }
 
 .korawari .fourBox {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -442,9 +456,10 @@ p {
 .korawari .backgroundPic {
   position: absolute;
   /* background-color: #d86a6a; */
-  width: 1035px;
-  height: 700px;
-  top: 0;
+  max-width: 1035px;
+  width: 100%;
+  height: 680px;
+  top: 160px;
   z-index: 1;
 }
 
@@ -522,7 +537,7 @@ p {
   font-weight: 400;
   letter-spacing: 4.8px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .osusume .container {
@@ -705,7 +720,8 @@ p {
 
   /* ----------menu---------- */
   .menu .wrapper {
-    max-width: 780px;
+    max-width: 850px;
+    height: 800px;
   }
 
   .boxLimit,
@@ -747,6 +763,56 @@ p {
     width: 388.33px;
   }
 
+  /* ------------kodawari----------------- */
+
+  .korawari {
+    width: 100%;
+    /* height: 800px; */
+  }
+
+  .korawari .fourBox {
+    max-width: 750px;
+  }
+
+  .neta,
+  .syari {
+    width: 140px;
+  }
+  .tennaicyouri,
+  .syouyu {
+    width: 110px;
+  }
+
+  .korawari .moreButtom .button {
+    padding: 11px 26px;
+  }
+  .korawari .backgroundPic {
+    max-width: 850px;
+    width: 100%;
+    top: 170px;
+  }
+
+  .korawari .backgroundPic .tennaicyouriPic {
+    width: 380px;
+    top: 15px;
+    left: -110px;
+  }
+
+  .korawari .backgroundPic .syouyuPic {
+    width: 380px;
+    right: -150px;
+    bottom: 40px;
+  }
+
+  .korawari .backgroundPic .netaPic {
+    width: 280px;
+    top: -10;
+  }
+  .korawari .backgroundPic .syariPic {
+    width: 280px;
+    bottom: 50px;
+  }
+
   @media screen and (max-width: 768px) {
     .sec1Wrapper {
       height: 1000px;
@@ -772,10 +838,12 @@ p {
     .sec1Wrapper .content1 {
       top: 450px;
       width: 310px;
+      line-height: 180%;
     }
     .sec1Wrapper .content2 {
-      top: 700px;
+      top: 710px;
       width: 280px;
+      line-height: 180%;
     }
     .indexSec2 {
       width: 125%;
@@ -829,7 +897,64 @@ p {
     }
 
     .boxTakeout video {
-      width: 358.33px;
+      width: 330.33px;
+    }
+
+    /* ------------kodawari----------------- */
+
+    .korawari {
+      width: 100%;
+      height: 1000px;
+    }
+    .korawari .wrapper h1 {
+      font-size: 36px;
+      margin: 30px 0 220px 0;
+    }
+
+    .korawari .fourBox {
+      max-width: 650px;
+    }
+
+    .neta,
+    .syari {
+      width: 130px;
+    }
+    .tennaicyouri,
+    .syouyu {
+      width: 100px;
+    }
+
+    .korawari .moreButtom .button {
+      padding: 7px 22px;
+      margin-top: 240px;
+    }
+    .korawari .backgroundPic {
+      max-width: 850px;
+      width: 100%;
+      top: 170px;
+    }
+
+    .korawari .backgroundPic .tennaicyouriPic {
+      width: 350px;
+      top: 20px;
+      left: 20px;
+    }
+
+    .korawari .backgroundPic .syouyuPic {
+      width: 350px;
+      right: 30px;
+      bottom: 30px;
+    }
+
+    .korawari .backgroundPic .netaPic {
+      width: 250px;
+      top: -40px;
+      right: 40px;
+    }
+    .korawari .backgroundPic .syariPic {
+      width: 250px;
+      bottom: -40px;
+      left: 55px;
     }
 
     @media screen and (max-width: 480px) {
@@ -939,7 +1064,7 @@ p {
       }
 
       .boxTakeout video {
-        width: 326.25px;
+        max-width: 317.5px;
       }
 
       .menuMiddle {
