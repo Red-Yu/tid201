@@ -403,21 +403,23 @@ h1 {
 }
 
 .cookInStoreContainer .cut,
-.fire,
-.steam,
-.fried {
+.cookInStoreContainer .fire,
+.cookInStoreContainer .steam,
+.cookInStoreContainer .fried {
   width: 450px;
   height: 155px;
   background-color: #ffffff;
   border-top: #06436b solid 7px;
   position: relative;
   display: flex;
+  /* margin: 0 10px; */
 }
 
 .cutAndFireSec,
 .steamAndFriedSec {
   margin: auto;
-  width: 950px;
+  max-width: 990px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
@@ -428,10 +430,7 @@ h1 {
   width: 350px;
 }
 
-.cookInStoreContainer .title .titleContent,
-.titleContent,
-.titleContent,
-.titleContent {
+.cookInStoreContainer .title .titleContent {
   position: absolute;
   color: rgb(255, 255, 255);
   top: -5px;
@@ -447,9 +446,9 @@ h1 {
 }
 
 .cookInStoreContainer .cuttitle,
-.firetitle,
-.steamtitle,
-.friedtitle {
+.cookInStoreContainer .firetitle,
+.cookInStoreContainer .steamtitle,
+.cookInStoreContainer .friedtitle {
   position: absolute;
   top: -3.5px;
   left: 225px;
@@ -458,23 +457,24 @@ h1 {
 }
 
 .cookInStoreContainer .cutBg,
-.fireBg,
-.steamBg,
-.friedBg {
+.cookInStoreContainer .fireBg,
+.cookInStoreContainer .steamBg,
+.cookInStoreContainer .friedBg {
   width: 450px;
 }
 
 .cookInStoreContainer .cutContent,
-.fireContent,
-.steamContent,
-.friedContent {
+.cookInStoreContainer .fireContent,
+.cookInStoreContainer .steamContent,
+.cookInStoreContainer .friedContent {
   position: absolute;
   color: #06436b;
   font-family: "Murecho", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
   transform: translate(-50%, -50%);
   top: 75px;
   left: 233px;
@@ -633,6 +633,11 @@ h1 {
   }
 
   /* ------------introduction2------------ */
+
+  .introduction2 {
+    height: 730px;
+  }
+
   .introduction2 h1 {
     font-size: 40px;
   }
@@ -654,6 +659,55 @@ h1 {
   .syariContent p {
     top: 100px;
     width: 650px;
+  }
+
+  /* -------------cookInStore---------------- */
+
+  .cookInStore h1 {
+    font-size: 40px;
+  }
+
+  .cookInStoreContainer .cut,
+  .cookInStoreContainer .fire,
+  .cookInStoreContainer .steam,
+  .cookInStoreContainer .fried {
+    max-width: 410px;
+    width: 100%;
+    height: 135px;
+  }
+  .cutAndFireSec,
+  .steamAndFriedSec {
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .cookInStoreContainer .cutBg,
+  .cookInStoreContainer .fireBg,
+  .cookInStoreContainer .steamBg,
+  .cookInStoreContainer .friedBg {
+    max-width: 410px;
+    width: 100%;
+  }
+
+  .cookInStoreContainer .cuttitle,
+  .cookInStoreContainer .firetitle,
+  .cookInStoreContainer .steamtitle,
+  .cookInStoreContainer .friedtitle {
+    left: 205px;
+  }
+
+  .cookInStoreContainer .title .titleContent {
+    left: 208px;
+  }
+
+  .cookInStoreContainer .cutContent,
+  .cookInStoreContainer .fireContent,
+  .cookInStoreContainer .steamContent,
+  .cookInStoreContainer .friedContent {
+    left: 213px;
+    top: 65px;
+    max-width: 300px;
+    width: 100%;
   }
 
   @media screen and (max-width: 768px) {
@@ -797,7 +851,7 @@ h1 {
     /* ------------introduction2------------ */
 
     .introduction2 {
-      height: 670px;
+      height: 660px;
     }
 
     .introduction2 h1 {
@@ -822,6 +876,55 @@ h1 {
     .syariContent p {
       top: 68px;
       width: 530px;
+    }
+
+    /* -------------cookInStore---------------- */
+
+    .cookInStore h1 {
+      font-size: 36px;
+    }
+
+    .cookInStoreContainer .cut,
+    .cookInStoreContainer .fire,
+    .cookInStoreContainer .steam,
+    .cookInStoreContainer .fried {
+      max-width: 340px;
+      width: 100%;
+      height: 135px;
+    }
+    .cutAndFireSec,
+    .steamAndFriedSec {
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .cookInStoreContainer .cutBg,
+    .cookInStoreContainer .fireBg,
+    .cookInStoreContainer .steamBg,
+    .cookInStoreContainer .friedBg {
+      max-width: 340px;
+      width: 100%;
+    }
+
+    .cookInStoreContainer .cuttitle,
+    .cookInStoreContainer .firetitle,
+    .cookInStoreContainer .steamtitle,
+    .cookInStoreContainer .friedtitle {
+      left: 170px;
+    }
+
+    .cookInStoreContainer .title .titleContent {
+      left: 173px;
+    }
+
+    .cookInStoreContainer .cutContent,
+    .cookInStoreContainer .fireContent,
+    .cookInStoreContainer .steamContent,
+    .cookInStoreContainer .friedContent {
+      left: 177px;
+      top: 65px;
+      max-width: 300px;
+      width: 100%;
     }
 
     @media screen and (max-width: 480px) {
@@ -1017,7 +1120,7 @@ h1 {
       /* ------------introduction2------------ */
 
       .introduction2 {
-        height: 610px;
+        height: 570px;
       }
 
       .introduction2 h1 {
@@ -1056,6 +1159,60 @@ h1 {
         line-height: 20px;
         width: 340px;
         z-index: 1200;
+      }
+
+      /* -------------cookInStore---------------- */
+
+      .cookInStore h1 {
+        font-size: 32px;
+      }
+
+      .cookInStoreContainer .cut,
+      .cookInStoreContainer .fire,
+      .cookInStoreContainer .steam,
+      .cookInStoreContainer .fried {
+        max-width: 380px;
+        width: 100%;
+        height: 135px;
+        margin: 20px 0;
+      }
+      .cutAndFireSec,
+      .steamAndFriedSec {
+        max-width: 410px;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+        margin: auto;
+      }
+
+      .cookInStoreContainer .cutBg,
+      .cookInStoreContainer .fireBg,
+      .cookInStoreContainer .steamBg,
+      .cookInStoreContainer .friedBg {
+        max-width: 380px;
+        width: 100%;
+      }
+
+      .cookInStoreContainer .cuttitle,
+      .cookInStoreContainer .firetitle,
+      .cookInStoreContainer .steamtitle,
+      .cookInStoreContainer .friedtitle {
+        left: 190px;
+      }
+
+      .cookInStoreContainer .title .titleContent {
+        left: 193px;
+      }
+
+      .cookInStoreContainer .cutContent,
+      .cookInStoreContainer .fireContent,
+      .cookInStoreContainer .steamContent,
+      .cookInStoreContainer .friedContent {
+        left: 195px;
+        top: 65px;
+        max-width: 300px;
+        width: 100%;
       }
     }
   }
