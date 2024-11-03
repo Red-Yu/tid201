@@ -36,6 +36,7 @@ function doFirst() {
   videos.forEach((video) => {
     // 設定視頻靜音
     video.muted = true;
+    video.setAttribute("playsinline", ""); // 確保視頻不會全屏播放
 
     if (isMobile()) {
       // 手機尺寸下，自動播放視頻
