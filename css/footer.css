@@ -63,14 +63,15 @@ footer .container li:hover {
   position: absolute;
   top: 0px;
   z-index: 2;
+  pointer-events: none;
   transition: transform 1s ease;
 }
 
 .imgLeft {
-  left: -20%;
+  left: -23%;
 }
 .imgRight {
-  right: -20%;
+  right: -23%;
 }
 
 .imgLeft img,

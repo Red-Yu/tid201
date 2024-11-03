@@ -23,8 +23,35 @@ $(function () {
 
     let triggerDistance = documentHeight - windowHeight - 150;
     let moveDistance = 570;
-
     let originalOffset = 270;
+
+    if (windowWidth < 768) {
+      moveDistance = 850; // 小於480px時的移動距離
+      originalOffset = 580; // 小於480px時的原始偏移
+    } else if (windowWidth < 850) {
+      moveDistance = 750; // 在480px到768px之間的移動距離
+      originalOffset = 540; // 在480px到768px之間的原始偏移
+    } else if (windowWidth < 950) {
+      moveDistance = 720;
+      originalOffset = 480;
+    } else if (windowWidth < 1024) {
+      moveDistance = 650; // 在768px到1024px之間的移動距離
+      originalOffset = 400; // 在768px到1024px之間的原始偏移
+    } else if (windowWidth < 1200) {
+      moveDistance = 590; // 在1024px到1200px之間的移動距離
+      originalOffset = 340; // 在1024px到1200px之間的原始偏移
+    } else {
+      moveDistance = 530; // 大於或等於1200px時的移動距離
+      originalOffset = 250; // 大於或等於1200px時的原始偏移
+    }
+
+    // if (windowWidth < 1024) {
+    //   moveDistance = 650; // 小於1024px時的移動距離
+    //   originalOffset = 400; // 小於1024px時的原始偏移
+    // } else {
+    //   moveDistance = 530; // 大於或等於1024px時的移動距離
+    //   originalOffset = 250; // 大於或等於1024px時的原始偏移
+    // }
 
     if (scrollTop > triggerDistance) {
       // 更新圖像位置
