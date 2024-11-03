@@ -799,6 +799,10 @@ h1 {
     }
 
     @media screen and (max-width: 480px) {
+      .mainImg .wrapper {
+        height: 520px;
+      }
+
       .mainImgContent {
         line-height: 32px;
         font-size: 20px;
