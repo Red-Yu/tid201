@@ -149,7 +149,7 @@ p {
 .bigNews .leftBox {
   background-color: #06436b;
   width: 315px;
-  height: 315px;
+  /* height: 415px; */
   margin-top: 70px;
   border-radius: 12px 0 0 12px;
   display: flex;
@@ -159,7 +159,7 @@ p {
 .bigNews .rightBox {
   border: #06436b solid 4px;
   width: 720px;
-  height: 315px;
+  /* height: 315px; */
   margin-top: 70px;
   border-radius: 0 12px 12px 0;
 }
@@ -171,7 +171,8 @@ p {
 }
 
 .bigNews .rightBox .content {
-  height: 315px;
+  /* height: 315px; */
+  margin: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -966,8 +967,8 @@ p {
       .mainImg .img2,
       .mainImg .img3 {
         width: 180%;
-        left: -205px;
-        top: -100px;
+        left: -200px;
+        top: 0px;
       }
 
       .mainImg .container h1 {
@@ -976,13 +977,13 @@ p {
       /* ======================= */
 
       .sec1Wrapper .content1 {
-        top: 500px;
+        top: 560px;
         width: 330px;
         transform: translateX(-50%);
         left: 50%;
       }
       .sec1Wrapper .content2 {
-        top: 1000px;
+        top: 1020px;
         width: 330px;
         transform: translateX(-50%);
         left: 50%;
@@ -990,11 +991,23 @@ p {
       .indexSec2 {
         width: 200%;
         left: -50px;
-        top: 600px;
+        top: 670px;
       }
       /* ----------banner----------- */
       .banner h1 {
         font-size: 32px;
+      }
+
+      .sliderFor img {
+        width: 95%;
+        margin-top: 10px;
+      }
+      .sliderNav img {
+        margin-top: 3px;
+        margin-bottom: 5px;
+      }
+      .sliderNav {
+        width: 83%;
       }
 
       /* ------------bigNews----------- */
@@ -1012,6 +1025,7 @@ p {
       .bigNews .rightBox {
         margin: auto;
         width: 90%;
+
         border-radius: 0 0 12px 12px;
       }
 

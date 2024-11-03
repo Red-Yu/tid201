@@ -165,6 +165,16 @@
           autoplaySpeed: 3000, // 設定每張圖片顯示的時間（毫秒）
           infinite: true, // 使滑塊無限循環
           speed: 500, // 切換速度（毫秒）
+
+          responsive: [
+            {
+              breakpoint: 480, // 當視窗寬度小於 480px
+              settings: {
+                slidesToShow: 3,
+                centerPadding: "0px",
+              },
+            },
+          ],
         });
       </script>
 
