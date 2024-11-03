@@ -494,6 +494,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 120px;
+  margin-bottom: 60px;
 }
 .finalContent p {
   text-align: center;
@@ -708,6 +710,12 @@ h1 {
     top: 65px;
     max-width: 300px;
     width: 100%;
+  }
+
+  /* --------------finalImg----------------- */
+
+  .finalBox {
+    height: 750px;
   }
 
   @media screen and (max-width: 768px) {
@@ -927,9 +935,18 @@ h1 {
       width: 100%;
     }
 
+    /* --------------finalImg----------------- */
+
+    .finalBox {
+      height: 600px;
+    }
+
+    .finalContent p {
+      font-size: 16px;
+    }
     @media screen and (max-width: 480px) {
       .mainImg .wrapper {
-        height: 590px;
+        height: 400px;
       }
 
       .mainImgContent {
@@ -951,10 +968,6 @@ h1 {
         width: 110%;
         left: -22px;
         top: 170px;
-      }
-
-      .mainImg .wrapper {
-        height: 300px;
       }
 
       /* ----------kodawari---------- */
@@ -1213,6 +1226,14 @@ h1 {
         top: 65px;
         max-width: 300px;
         width: 100%;
+      }
+
+      /* --------------finalImg----------------- */
+
+      .finalBox {
+        height: 800px;
+        margin-top: 60px;
+        margin-bottom: 30px;
       }
     }
   }
