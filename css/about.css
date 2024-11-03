@@ -90,7 +90,7 @@ h1 {
 /* -------------kodawari--------------- */
 
 .korawari .wrapper {
-  width: 1035px;
+  max-width: 1035px;
   height: 650px;
   /* background-color: #cdcdcd; */
   margin: auto;
@@ -495,22 +495,43 @@ h1 {
 
 @media screen and (max-width: 1024px) {
   .mainImgContent {
-    top: 120px;
+    top: 135px;
   }
   .mainImg .img1,
   .mainImg .img2,
   .mainImg .img3,
   .mainImg .img4,
   .mainImg .img5 {
-    top: 20px;
+    top: 50px;
   }
 
   .mainImg .wrapper {
-    height: 400px;
+    height: 470px;
   }
+
+  /* ----------kodawari----------- */
+
+  .korawari {
+    width: 100%;
+    /* height: 800px; */
+  }
+
+  .korawari .fourBox {
+    max-width: 750px;
+  }
+
+  .neta,
+  .syari {
+    width: 130px;
+  }
+  .tennaicyouri,
+  .syouyu {
+    width: 110px;
+  }
+
   @media screen and (max-width: 768px) {
     .mainImgContent {
-      top: 110px;
+      top: 140px;
     }
 
     .mainImg .img1,
@@ -518,12 +539,35 @@ h1 {
     .mainImg .img3,
     .mainImg .img4,
     .mainImg .img5 {
-      top: 50px;
+      top: 100px;
     }
 
     .mainImg .wrapper {
-      height: 380px;
+      height: 440px;
     }
+
+    /* ---------kodawari---------- */
+
+    .korawari {
+      width: 100%;
+    }
+    .korawari .wrapper h1 {
+      font-size: 36px;
+    }
+
+    .korawari .fourBox {
+      max-width: 650px;
+    }
+
+    .neta,
+    .syari {
+      width: 120px;
+    }
+    .tennaicyouri,
+    .syouyu {
+      width: 100px;
+    }
+
     @media screen and (max-width: 480px) {
       .mainImgContent {
         line-height: 32px;
@@ -543,11 +587,38 @@ h1 {
       .mainImg .img5 {
         width: 110%;
         left: -22px;
-        top: 150px;
+        top: 170px;
       }
 
       .mainImg .wrapper {
-        height: 380px;
+        height: 300px;
+      }
+
+      /* ----------kodawari---------- */
+
+      .korawari .wrapper h1 {
+        font-size: 32px;
+      }
+
+      .korawari .fourBox {
+        max-width: 380px;
+      }
+
+      .neta,
+      .syari {
+        width: 80px;
+      }
+      .tennaicyouri,
+      .syouyu {
+        width: 65px;
+      }
+
+      .korawariContainer .buttonDown button {
+        width: 35px;
+        height: 35px;
+        font-size: 24px;
+        padding-bottom: 5px;
+        padding-left: 1px;
       }
     }
   }
