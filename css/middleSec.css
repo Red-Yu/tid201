@@ -982,6 +982,12 @@ p {
       height: 121px;
     }
 
+    /* -----------topics--------- */
+
+    .topics h1 {
+      font-size: 36px;
+    }
+
     @media screen and (max-width: 480px) {
       .sec1Wrapper {
         height: 1200px;
@@ -1125,7 +1131,7 @@ p {
       }
       .korawari .wrapper h1 {
         font-size: 32px;
-        margin: 30px 0 220px 0;
+        margin: 50px 0 220px 0;
       }
 
       .korawari .fourBox {
@@ -1144,7 +1150,7 @@ p {
       .korawari .moreButtom .button {
         font-size: 14px;
         padding: 3px 18px;
-        margin-top: 240px;
+        margin-top: 260px;
       }
       .korawari .backgroundPic {
         max-width: 480px;
@@ -1178,6 +1184,7 @@ p {
 
       .osusume h1 {
         font-size: 32px;
+        margin-top: 0;
       }
       .osusume img {
         width: 180px;
@@ -1190,17 +1197,14 @@ p {
 
       /* --------------topics------------- */
 
+      .topics h1 {
+        font-size: 32px;
+      }
+
       .topicsContainer .topicBar span {
         display: none;
       }
 
-      /* .topicBar {
-        display: block;
-      }
-
-      .topicsContainer .date {
-        display: inline;
-      } */
       .topicBar {
         display: flex;
         flex-wrap: wrap;
