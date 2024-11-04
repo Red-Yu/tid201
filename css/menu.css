@@ -902,7 +902,7 @@ h1 {
     /* ---------------driveThrough---------------- */
 
     .driveThrough {
-      height: 2050px;
+      height: 2000px;
     }
 
     .driveThrough .driveThroughBg h1 {
@@ -919,7 +919,7 @@ h1 {
     }
 
     .backgroundYellow {
-      height: 2010px;
+      height: 1972px;
     }
     .backgroundYellow .car {
       width: 250px;
@@ -937,7 +937,7 @@ h1 {
       background-image: url(../assets/mobile/menu/driveThrough-08.png);
       width: 390px;
       height: 1240px;
-      top: 880px;
+      top: 850px;
     }
     .driveThroughMenu {
       position: relative;
