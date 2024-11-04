@@ -285,18 +285,25 @@ h1 {
 /* ------things to note-------- */
 
 .noteBox {
-  width: 930px;
+  max-width: 970px;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  padding: 0 20px;
+}
+
+.noteBox button {
+  flex-shrink: 0;
 }
 
 .thingsToNote {
   margin: auto;
   font-size: 12px;
   text-align: start;
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
 }
 
 .arrowTop {
@@ -379,14 +386,13 @@ h1 {
 
 .backgroundYellow {
   width: 100%;
-
   height: 1759px;
   position: absolute;
   top: 400px;
   background-image: url(../assets/menu/takeout/bg_yellow.png);
   background-position: top;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .backgroundYellow .car {
@@ -398,6 +404,10 @@ h1 {
 
 .newsCheck h1 {
   color: #06436b;
+}
+
+.newsCheck .rightBox h2 {
+  background-color: #c9c9c9;
 }
 
 /* -----------driveThroughMenu--------------- */
@@ -413,6 +423,7 @@ h1 {
   left: 50%;
   top: 700px;
   z-index: 600;
+  /* display: flex; */
 }
 
 .driveThroughMenu {
@@ -420,7 +431,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 918px;
+  max-width: 918px;
+  width: 100%;
   text-align: center;
 }
 
@@ -558,6 +570,89 @@ h1 {
   }
 
   /* ---------menu-------- */
+  /* ------things to note-------- */
+
+  .thingsToNote {
+    max-width: 600px;
+  }
+
+  /* ---------------driveThrough---------------- */
+
+  .driveThrough {
+    /* height: 1700px; */
+  }
+
+  .driveThrough .driveThroughBg h1 {
+    margin: 10px;
+    font-size: 36px;
+  }
+
+  .driveThrough .driveThroughBg h2 {
+    font-size: 20px;
+  }
+  .driveThroughImg {
+    width: 700px;
+    top: -120px;
+    left: -140px;
+  }
+  .backgroundYellow .car {
+    width: 230px;
+    position: absolute;
+    top: -60px;
+    right: 150px;
+  }
+  .backgroundYellow {
+    height: 1735px;
+  }
+
+  /* -----------driveThroughMenu--------------- */
+
+  .driveThroughMenuBg {
+    width: 900px;
+    height: 908px;
+  }
+
+  .driveThroughMenu h1 {
+    font-size: 36px;
+  }
+
+  .driveThroughMenu h2 {
+    font-size: 24px;
+  }
+
+  .driveThroughMenu .button {
+    width: 700px;
+  }
+  .driveThroughMenu .sushi,
+  .side,
+  .dessert {
+    width: 200px;
+  }
+
+  .sushiMenu {
+    gap: 20px;
+  }
+
+  .sushiMenuImg {
+    width: 180px;
+    height: 153px;
+  }
+
+  .sushiMenuImg img {
+    width: 130px;
+  }
+
+  .sushiMenuContent {
+    width: 180px;
+    height: 90px;
+  }
+  .sushiMenuContent {
+    font-size: 16px;
+  }
+
+  .sushiMenuBox .remind {
+    margin-top: 2px;
+  }
 
   @media screen and (max-width: 768px) {
     .seaArea h1 {
@@ -588,9 +683,6 @@ h1 {
       font-size: 36px;
     }
 
-    .sushiBox {
-      /* width: 200px; */
-    }
     .sushiBox img {
       width: 180px;
     }
@@ -601,6 +693,119 @@ h1 {
     .sushiBox .circle {
       width: 120px;
       height: 120px;
+    }
+    /* ------things to note-------- */
+
+    .thingsToNote {
+      max-width: 500px;
+    }
+
+    /* ---------------driveThrough---------------- */
+
+    .driveThrough {
+      height: 1500px;
+    }
+
+    .driveThrough .driveThroughBg h1 {
+      font-size: 36px;
+    }
+
+    .driveThrough .driveThroughBg h2 {
+      font-size: 20px;
+    }
+    .driveThroughImg {
+      width: 600px;
+      top: -85px;
+      left: -140px;
+    }
+    .backgroundYellow .car {
+      width: 230px;
+      position: absolute;
+      top: -50px;
+      right: 150px;
+    }
+
+    /* ---------------driveThrough---------------- */
+
+    .driveThrough .driveThroughBg h1 {
+      margin: 10px;
+      font-size: 36px;
+    }
+
+    .driveThrough .driveThroughBg h2 {
+      font-size: 20px;
+    }
+    .driveThroughImg {
+      width: 600px;
+      top: -80px;
+      left: -140px;
+    }
+    .backgroundYellow .car {
+      width: 230px;
+      position: absolute;
+      top: -50px;
+      right: 150px;
+    }
+    .backgroundYellow {
+      height: 1457px;
+    }
+
+    /* -----------driveThroughMenu--------------- */
+
+    .driveThroughMenuBg {
+      width: 700px;
+      height: 708px;
+      display: flex;
+      top: 550px;
+    }
+
+    .driveThroughMenu h1 {
+      font-size: 32px;
+      margin-top: 0;
+    }
+
+    .driveThroughMenu h2 {
+      font-size: 22px;
+    }
+
+    .driveThroughMenu .button {
+      width: 550px;
+      margin-top: 20px;
+    }
+    .driveThroughMenu .sushi,
+    .side,
+    .dessert {
+      width: 160px;
+    }
+
+    .sushiMenu {
+      max-width: 700px;
+      gap: 10px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .sushiMenuImg {
+      width: 150px;
+      height: 113px;
+    }
+
+    .sushiMenuImg img {
+      width: 110px;
+    }
+
+    .sushiMenuContent {
+      width: 150px;
+      height: 80px;
+    }
+    .sushiMenuContent {
+      font-size: 16px;
+    }
+
+    .sushiMenuBox .remind {
+      margin-top: 0px;
+      margin-bottom: 5px;
+      font-size: 8px;
     }
   }
 
@@ -680,6 +885,17 @@ h1 {
     }
     .sushiBox {
       width: 180px;
+    }
+
+    /* ------things to note-------- */
+
+    .noteBox {
+      flex-wrap: wrap;
+    }
+
+    .noteBox button {
+      margin-top: 20px;
+      margin-left: auto;
     }
   }
 }
