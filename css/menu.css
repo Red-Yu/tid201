@@ -241,7 +241,8 @@ h1 {
 }
 
 .listArea {
-  width: 1035px;
+  max-width: 1035px;
+  width: 100%;
   /* background-color: #c4c4c4; */
   display: flex;
   margin: auto;
@@ -503,8 +504,6 @@ h1 {
 /* -----------------RWD------------------ */
 
 @media screen and (max-width: 1024px) {
-  .seaArea h1 {
-  }
   .menuSec1 {
     max-width: 550px;
   }
@@ -558,6 +557,8 @@ h1 {
     top: -36px;
   }
 
+  /* ---------menu-------- */
+
   @media screen and (max-width: 768px) {
     .seaArea h1 {
       font-size: 24px;
@@ -579,6 +580,27 @@ h1 {
     .menuSec3Box1,
     .menuSec3Box2 {
       z-index: 300;
+    }
+
+    /* ---------menu-------- */
+
+    .menuList h1 {
+      font-size: 36px;
+    }
+
+    .sushiBox {
+      /* width: 200px; */
+    }
+    .sushiBox img {
+      width: 180px;
+    }
+
+    sushiBox .imgSushi {
+      top: 0;
+    }
+    .sushiBox .circle {
+      width: 120px;
+      height: 120px;
     }
   }
 
@@ -645,6 +667,19 @@ h1 {
       width: 27px;
       right: -22px;
       top: -34px;
+    }
+
+    /* ---------menu-------- */
+
+    .menuList h1 {
+      font-size: 32px;
+    }
+
+    .listArea {
+      flex-wrap: wrap;
+    }
+    .sushiBox {
+      width: 180px;
     }
   }
 }
