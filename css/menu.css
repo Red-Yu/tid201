@@ -407,7 +407,7 @@ h1 {
 }
 
 .newsCheck .rightBox h2 {
-  background-color: #c9c9c9;
+  background-color: #d8d8d8;
 }
 
 /* -----------driveThroughMenu--------------- */
@@ -719,10 +719,7 @@ h1 {
       left: -140px;
     }
     .backgroundYellow .car {
-      width: 230px;
-      position: absolute;
       top: -50px;
-      right: 150px;
     }
 
     /* ---------------driveThrough---------------- */
@@ -747,7 +744,7 @@ h1 {
       right: 150px;
     }
     .backgroundYellow {
-      height: 1457px;
+      height: 1446px;
     }
 
     /* -----------driveThroughMenu--------------- */
@@ -806,6 +803,10 @@ h1 {
       margin-top: 0px;
       margin-bottom: 5px;
       font-size: 8px;
+    }
+
+    .sushiSlide img {
+      width: 900px;
     }
   }
 
@@ -896,6 +897,96 @@ h1 {
     .noteBox button {
       margin-top: 20px;
       margin-left: auto;
+    }
+
+    /* ---------------driveThrough---------------- */
+
+    .driveThrough {
+      height: 2050px;
+    }
+
+    .driveThrough .driveThroughBg h1 {
+      font-size: 26px;
+    }
+
+    .driveThrough .driveThroughBg h2 {
+      font-size: 16px;
+    }
+    .driveThroughImg {
+      width: 500px;
+      top: -50px;
+      left: -150px;
+    }
+
+    .backgroundYellow {
+      height: 2010px;
+    }
+    .backgroundYellow .car {
+      width: 250px;
+      top: -50px;
+      right: 85px;
+    }
+
+    .newsCheck .rightBox h2 {
+      background-color: #e3e3e3;
+    }
+
+    /* -----------driveThroughMenu--------------- */
+
+    .driveThroughMenuBg {
+      background-image: url(../assets/mobile/menu/driveThrough-08.png);
+      width: 390px;
+      height: 1240px;
+      top: 880px;
+    }
+    .driveThroughMenu {
+      position: relative;
+      top: -15px;
+    }
+
+    .driveThroughMenu h1 {
+      font-size: 24px;
+    }
+
+    .driveThroughMenu h2 {
+      font-size: 20px;
+    }
+
+    .driveThroughMenu .button {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      width: 370px;
+    }
+    .driveThroughMenu .sushi,
+    .side,
+    .dessert {
+      width: 115px;
+    }
+
+    .sushiMenu {
+      gap: 15px;
+    }
+
+    .sushiMenuImg {
+      width: 160px;
+      height: 123px;
+    }
+
+    .sushiMenuContent {
+      width: 160px;
+      height: 90px;
+    }
+
+    .sushiMenuImg img {
+      width: 120px;
+    }
+
+    .sushiMenuBox .remind {
+      margin-top: 3px;
+    }
+
+    .sushiSlide img {
+      width: 700px;
     }
   }
 }
