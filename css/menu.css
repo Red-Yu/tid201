@@ -24,6 +24,12 @@ h1 {
   margin-bottom: 30px;
 }
 
+.bodyWrapper {
+  max-width: 1440px;
+  margin: auto;
+  overflow: hidden;
+}
+
 /* --------seaArea--------- */
 
 .seaArea {
@@ -33,6 +39,9 @@ h1 {
 .seaWrapper {
   width: 100%;
   height: 760px;
+  display: flex;
+  flex-direction: column;
+
   background-image: url(../assets/menu/main1.png);
   background-position: center;
   background-size: cover;
@@ -123,7 +132,9 @@ h1 {
 }
 
 .menuSec1 {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
+  padding: 0 20px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -149,7 +160,9 @@ h1 {
 /* -------------2----------------- */
 
 .menuSec2 {
-  width: 1050px;
+  max-width: 1050px;
+  width: 100%;
+  padding: 0 20px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -186,7 +199,9 @@ h1 {
 /* -------------3----------------- */
 
 .menuSec3 {
-  width: 620px;
+  max-width: 620px;
+  width: 100%;
+  padding: 0 20px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -483,4 +498,153 @@ h1 {
 .sushiSlide img {
   width: 974px;
   margin-top: 140px;
+}
+
+/* -----------------RWD------------------ */
+
+@media screen and (max-width: 1024px) {
+  .seaArea h1 {
+  }
+  .menuSec1 {
+    max-width: 550px;
+  }
+  .menuSec2 {
+    max-width: 900px;
+  }
+
+  .menuSec3 {
+    max-width: 560px;
+  }
+
+  .menuSec1 .menuContentLimit {
+    width: 32px;
+    right: 7px;
+    top: -36px;
+  }
+
+  .menuSec1 .menuContentNigiri {
+    width: 32px;
+    right: -8px;
+    top: -36px;
+  }
+
+  .menuSec2 .menuContentNiku {
+    width: 32px;
+    right: 7px;
+    top: -36px;
+  }
+
+  .menuSec2 .menuContentGunkan {
+    width: 66px;
+    right: -16px;
+    top: -42px;
+  }
+
+  .menuSec2 .menuContentSide {
+    width: 32px;
+    right: -13px;
+    top: -48px;
+  }
+
+  .menuSec3 .menuContentKids {
+    width: 32px;
+    right: -8px;
+    top: -36px;
+  }
+
+  .menuSec3 .menuContentTakeout {
+    width: 32px;
+    right: -28px;
+    top: -36px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .seaArea h1 {
+      font-size: 24px;
+      margin-bottom: 80px;
+    }
+    .menuSec1 {
+      max-width: 450px;
+      margin-bottom: 50px;
+    }
+    .menuSec2 {
+      max-width: 680px;
+      margin-bottom: 50px;
+    }
+
+    .menuSec3 {
+      max-width: 460px;
+    }
+
+    .menuSec3Box1,
+    .menuSec3Box2 {
+      z-index: 300;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .seaArea h1 {
+      font-size: 20px;
+      width: 240px;
+      align-self: center;
+    }
+
+    .menuSec img {
+      width: 125px;
+    }
+
+    .menuSec1 {
+      max-width: 310px;
+    }
+    .menuSec2 {
+      max-width: 380px;
+      padding: 0 5px;
+    }
+
+    .menuSec3 {
+      max-width: 320px;
+    }
+
+    .menuSec1 .menuContentLimit {
+      width: 27px;
+      right: 7px;
+      top: -32px;
+    }
+
+    .menuSec1 .menuContentNigiri {
+      width: 27px;
+      right: -8px;
+      top: -32px;
+    }
+
+    .menuSec2 .menuContentNiku {
+      width: 27px;
+      right: 7px;
+      top: -32px;
+    }
+
+    .menuSec2 .menuContentGunkan {
+      width: 53px;
+      right: -10px;
+      top: -34px;
+    }
+
+    .menuSec2 .menuContentSide {
+      width: 27px;
+      right: -2px;
+      top: -34px;
+    }
+
+    .menuSec3 .menuContentKids {
+      width: 27px;
+      right: -8px;
+      top: -34px;
+    }
+
+    .menuSec3 .menuContentTakeout {
+      width: 27px;
+      right: -22px;
+      top: -34px;
+    }
+  }
 }
