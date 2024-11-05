@@ -578,10 +578,6 @@ h1 {
 
   /* ---------------driveThrough---------------- */
 
-  .driveThrough {
-    /* height: 1700px; */
-  }
-
   .driveThrough .driveThroughBg h1 {
     margin: 10px;
     font-size: 36px;
