@@ -134,7 +134,7 @@ nav li:hover {
   /* border: red solid 5px; */
   width: 410px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   overflow: hidden;
@@ -153,16 +153,19 @@ nav li:hover {
   top: 0;
   right: -350px;
   z-index: 1000;
-  opacity: 0;
-  animation: none;
+  /* opacity: 0; */
+  /* animation: none; */
+  transform: scale(0);
+  transition: all 0.8s ease;
   transform-origin: top center;
 }
 
 .hamburgerCircle.active {
   opacity: 0.8;
-  animation: cirlceAnimation 0.8s ease forwards;
+  /* animation: cirlceAnimation 0.8s ease forwards; */
+  transform: scale(1);
 }
-
+/* 
 @keyframes cirlceAnimation {
   0% {
     transform: scale(0);
@@ -184,7 +187,7 @@ nav li:hover {
   100% {
     transform: scale(0);
   }
-}
+} */
 
 .hamburgerContent {
   position: relative;
@@ -238,7 +241,7 @@ nav li:hover {
   font-family: "Potta One";
   font-size: 24px;
   font-style: normal;
-  /* font-weight: 400; */
+
   line-height: normal;
   cursor: pointer;
 }
@@ -306,8 +309,9 @@ nav li:hover {
 
       /* ------------hamburger-------------- */
       .hamburgerWrapper {
+        position: fixed;
         width: 100%;
-        border: red solid 5px;
+        /* border: red solid 5px; */
       }
 
       .hamburgerContent {
@@ -315,18 +319,33 @@ nav li:hover {
         margin-top: 40px;
       }
       .hamburgerCircle {
-        /* top: -100px; */
-        right: -350px;
+        top: -50px;
+        transition: all 1.2s ease;
       }
-      @keyframes cirlceAnimation {
+
+      .hamburgerCircle.active {
+        transform: scale(3);
+      }
+
+      .hamburgerContent .imgLogo {
+        width: 145px;
+        margin-bottom: 10px;
+      }
+      .hamburgerContent .navlist {
+        font-size: 20px;
+      }
+
+      .hamburgerContent .navlist li {
+        margin-top: 10px;
+      }
+      /* @keyframes cirlceAnimation {
         0% {
           transform: scale(0);
         }
 
         100% {
           transform: scale(1);
-        }
-      }
+        } */
     }
   }
 }
