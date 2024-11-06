@@ -26,6 +26,15 @@
     <script src="./js/header.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/footer.js"></script>
+
+    <script src="./js/parallax.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"
+      integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simasushi_menu</title>
@@ -94,9 +103,9 @@
       <div class="seaArea">
         <div class="seaWrapper">
           <h1>各地での厳選素材を使用しています</h1>
-          <div class="menuSec">
-            <div class="menuSec1">
-              <div class="menuSec1Box1">
+          <div id="scene" class="menuSec">
+            <div data-depth="0.8" class="menuSec1">
+              <div class="menuSec1Box menuSec1Box1">
                 <img
                   src="./assets/index/menu_limited_img.png"
                   alt=""
@@ -108,7 +117,7 @@
                   class="menuContentLimit"
                 />
               </div>
-              <div class="menuSec1Box2">
+              <div class="menuSec1Box menuSec1Box2">
                 <img
                   src="./assets/index/menu_nigiri_img.png"
                   alt=""
@@ -122,8 +131,8 @@
               </div>
             </div>
             <!-------------------------- 2 ----------------------------->
-            <div class="menuSec2">
-              <div class="menuSec2Box1">
+            <div data-depth="0.2" class="menuSec2">
+              <div class="menuSec1Box menuSec2Box1">
                 <img
                   src="./assets/index/menu_nikunigiri_img.png"
                   alt=""
@@ -135,7 +144,7 @@
                   class="menuContentNiku"
                 />
               </div>
-              <div class="menuSec2Box2">
+              <div class="menuSec1Box menuSec2Box2">
                 <img
                   src="./assets/index/menu_gunkan_img.png"
                   alt=""
@@ -148,7 +157,7 @@
                 />
               </div>
 
-              <div class="menuSec2Box3">
+              <div class="menuSec1Box menuSec2Box3">
                 <img
                   src="./assets/index/menu_side_img.png"
                   alt=""
@@ -163,8 +172,8 @@
             </div>
             <!-------------------------- 3 ----------------------------->
 
-            <div class="menuSec3">
-              <div class="menuSec3Box1">
+            <div data-depth="0.5" class="menuSec3">
+              <div class="menuSec1Box menuSec3Box1">
                 <img
                   src="./assets/index/menu_kids_img.png"
                   alt=""
@@ -176,7 +185,7 @@
                   class="menuContentKids"
                 />
               </div>
-              <div class="menuSec3Box2">
+              <div class="menuSec1Box menuSec3Box2">
                 <img
                   src="./assets/index/menu_takeout_img.png"
                   alt=""
@@ -808,19 +817,22 @@
                   src="./assets/menu/takeout/driveThrough-nigiri_buttom.png"
                   alt=""
                   class="sushi"
+                  onclick="switchMenu('sushiMenuOsushi')"
                 />
                 <img
                   src="./assets/menu/takeout/driveThrough-side_buttom.png"
                   alt=""
                   class="side"
+                  onclick="switchMenu('sushiMenuSide')"
                 />
                 <img
                   src="./assets/menu/takeout/driveThrough-side_dessert.png"
                   alt=""
                   class="dessert"
+                  onclick="switchMenu('sushiMenuDessert')"
                 />
               </div>
-              <div class="sushiMenu">
+              <div class="sushiMenu sushiMenuOsushi">
                 <div class="sushiMenuBox">
                   <div class="sushiMenuImg">
                     <img
@@ -926,6 +938,192 @@
                     <p>厳選12種セット</p>
                     <p>＜1人前/12貫＞</p>
                     <p>税込1,000円</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sushiMenu sushiMenuSide">
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img src="./assets/menu/takeout_side/takoyaki.png" alt="" />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p>はまっこ海鮮丼</p>
+                    <p>税込380円</p>
+                    <div class="remind">
+                      <p>※シャリは通常の丼の約半分の量です</p>
+                      <p>※ガチャボールの種類は選べません</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img src="./assets/menu/takeout_side/pro_33.png" alt="" />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p>まぐろサーモン丼</p>
+                    <p>税込540円</p>
+                  </div>
+                </div>
+
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img
+                      src="./assets/menu/takeout_side/pro_karaage.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p>まぐろ丼</p>
+                    <p>税込540円</p>
+                  </div>
+                </div>
+
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img src="./assets/menu/takeout_side/pro_38.png" alt="" />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p>特選！</p>
+                    <p>海鮮レアステーキ丼</p>
+                    <p>税込540円</p>
+                  </div>
+                </div>
+
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img src="./assets/menu/takeout_side/pro_36.png" alt="" />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p>5種の海鮮丼</p>
+                    <p>税込540円</p>
+                  </div>
+                </div>
+
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img
+                      src="./assets/menu/takeout_side/broccoli_salad.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p>7種の海鮮丼</p>
+                    <p>税込780円</p>
+                  </div>
+                </div>
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p></p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p></p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <div class="sushiMenu sushiMenuDessert">
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img
+                      src="./assets/menu/takeout_dessert/chocola.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p>はまっこ海鮮丼</p>
+                    <p>税込380円</p>
+                    <div class="remind">
+                      <p>※シャリは通常の丼の約半分の量です</p>
+                      <p>※ガチャボールの種類は選べません</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img
+                      src="./assets/menu/takeout_dessert/pro_43.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p>まぐろサーモン丼</p>
+                    <p>税込540円</p>
+                  </div>
+                </div>
+
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img
+                      src="./assets/menu/takeout_dessert/apple2023.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p>まぐろ丼</p>
+                    <p>税込540円</p>
+                  </div>
+                </div>
+
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img
+                      src="./assets/menu/takeout_dessert/grape2023.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p>特選！</p>
+                    <p>海鮮レアステーキ丼</p>
+                    <p>税込540円</p>
+                  </div>
+                </div>
+
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p></p>
+                    <p></p>
+                  </div>
+                </div>
+
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p></p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p></p>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="sushiMenuBox">
+                  <div class="sushiMenuImg">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="sushiMenuContent">
+                    <p></p>
+                    <p></p>
                   </div>
                 </div>
               </div>

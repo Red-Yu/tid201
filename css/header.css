@@ -141,6 +141,7 @@ nav li:hover {
   z-index: 1000;
   display: flex;
   align-items: center;
+  pointer-events: none;
 }
 .hamburgerCircle {
   /* border: yellow solid 5px; */
@@ -201,9 +202,11 @@ nav li:hover {
   color: #06436b;
   opacity: 0;
   animation: none;
+  pointer-events: none;
 }
 
 .hamburgerContent.active {
+  pointer-events: auto;
   animation: hamburgerContentAnimation 0.8s ease 0.3s forwards;
 }
 

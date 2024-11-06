@@ -127,6 +127,10 @@ h1 {
 
 /* ---------seaArea_menuSec-------- */
 
+.menuSec {
+  position: relative;
+}
+
 .menuSec img {
   width: 160px;
 }
@@ -138,7 +142,19 @@ h1 {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
+
+.menuSec1Box {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menuSec1Box:hover {
+  transform: scale(1.05);
+  transform-origin: bottom center;
+}
+
 .menuSec1Box1,
 .menuSec1Box2 {
   position: relative;
@@ -166,6 +182,7 @@ h1 {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .menuSec2Box1,
@@ -205,6 +222,7 @@ h1 {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .menuSec3Box1,
@@ -433,7 +451,6 @@ h1 {
   align-items: center;
   max-width: 918px;
   width: 100%;
-  text-align: center;
 }
 
 .driveThroughMenu h1 {
@@ -461,12 +478,43 @@ h1 {
 }
 
 .sushiMenu {
+  /* max-width: 904px; */
   width: 100%;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  /* border: yellow solid 5px; */
+}
+
+/* 初始隱藏所有菜單 */
+.sushiMenu {
+  display: none;
+}
+
+/* 顯示當前菜單 */
+.sushiMenu.active {
+  display: flex;
+}
+
+.driveThroughMenu .button {
+  cursor: pointer;
+}
+.driveThroughMenu .button img:hover {
+  opacity: 0.7;
+}
+
+.sushiMenuSide .sushiMenuBox:nth-last-child(1),
+.sushiMenuSide .sushiMenuBox:nth-last-child(2) {
+  opacity: 0;
+}
+
+.sushiMenuDessert .sushiMenuBox:nth-last-child(1),
+.sushiMenuDessert .sushiMenuBox:nth-last-child(2),
+.sushiMenuDessert .sushiMenuBox:nth-last-child(3),
+.sushiMenuDessert .sushiMenuBox:nth-last-child(4) {
+  opacity: 0;
 }
 
 .sushiMenuImg {
@@ -695,7 +743,7 @@ h1 {
       width: 180px;
     }
 
-    sushiBox .imgSushi {
+    .sushiBox .imgSushi {
       top: 0;
     }
     .sushiBox .circle {
@@ -784,7 +832,6 @@ h1 {
     }
 
     .sushiMenu {
-      max-width: 700px;
       gap: 10px;
       margin-top: 20px;
       margin-bottom: 40px;

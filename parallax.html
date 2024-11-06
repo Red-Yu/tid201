@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 只保留 CDN 版本的 Parallax.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"
+      integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="scene">
+      <div data-depth="0.2">My first Layer!</div>
+      <div data-depth="0.6">My second Layer!</div>
+      <div data-depth="0.8" data-relative-input="true">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0051/4802/products/Small_Octocat_600x600.png?v=1571377850"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <script>
+      // 確保在頁面加載後初始化 Parallax
+      function doFirst() {
+        var scene = document.getElementById("scene");
+        if (scene) {
+          var parallaxInstance = new Parallax(scene);
+        } else {
+          console.error("Scene element not found!");
+        }
+      }
+
+      // 確保頁面加載完成後再執行
+      window.addEventListener("load", doFirst);
+    </script>
+  </body>
+</html>
