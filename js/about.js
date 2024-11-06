@@ -319,6 +319,11 @@ function doFirst() {
   createTextTimeline(textElements[1], textElements[0], triggerDistance * 2); // textElement2在img2后出现
   createTextTimeline(textElements[2], textElements[1], triggerDistance * 4); // textElement3在img3后出现
   createTextTimeline(textElements[3], textElements[2], triggerDistance * 6); // textElement4在img4后出现
+
+  function playVideo() {
+    let video = document.getElementById("myVideo");
+    video.play();
+  }
 }
 
 window.addEventListener("load", doFirst);

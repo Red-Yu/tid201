@@ -502,15 +502,27 @@ h1 {
 
 .sushiSlide {
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   position: absolute;
   bottom: 380px;
+  left: 50px;
+  animation: slide 10s linear infinite;
 }
 
 .sushiSlide img {
   width: 974px;
   margin-top: 140px;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-90.5%);
+  }
 }
 
 /* -----------------RWD------------------ */

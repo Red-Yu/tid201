@@ -67,13 +67,15 @@ $(function () {
   });
 
   // 獲取 goToTop 元素
-  const goToTopButton = document.querySelector(".goToTop");
+  let goToTopButtons = document.querySelectorAll(".goToTop");
 
   // 添加點擊事件監聽器
-  goToTopButton.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0, // 滾動到頁面頂部
-      behavior: "smooth", // 平滑滾動
+  goToTopButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0, // 滾動到頁面頂部
+        behavior: "smooth", // 平滑滾動
+      });
     });
   });
 });

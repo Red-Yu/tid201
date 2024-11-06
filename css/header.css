@@ -145,12 +145,11 @@ nav li:hover {
 .hamburgerCircle {
   /* border: yellow solid 5px; */
   background-color: #ffffff;
-  /* opacity: 0.8; */
   width: 750px;
   height: 750px;
   border-radius: 50%;
   position: absolute;
-  top: 0;
+  top: -30px;
   right: -350px;
   z-index: 1000;
   /* opacity: 0; */
@@ -198,6 +197,7 @@ nav li:hover {
   flex-direction: column;
   align-items: center;
   margin-left: auto;
+  margin-top: 60px;
   color: #06436b;
   opacity: 0;
   animation: none;
@@ -324,7 +324,7 @@ nav li:hover {
       }
 
       .hamburgerCircle.active {
-        transform: scale(3);
+        transform: scale(2.8);
       }
 
       .hamburgerContent .imgLogo {
