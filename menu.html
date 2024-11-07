@@ -23,17 +23,12 @@
       rel="stylesheet"
     />
     <script src="./js/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/footer.js"></script>
 
-    <script src="./js/parallax.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"
-      integrity="sha512-Blu6KWaTqestULmtJUTB2mwDFTB/FDRuTHV52Uu5dTFVQZ8YWUq2LuxN/brNEjWAqlHr50oAbxrydsuxoK/mqQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- <script src="./js/menu_parallax.js"></script> -->
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -103,99 +98,127 @@
       <div class="seaArea">
         <div class="seaWrapper">
           <h1>各地での厳選素材を使用しています</h1>
-          <div id="scene" class="menuSec">
-            <div data-depth="0.8" class="menuSec1">
+          <div class="menuSec">
+            <div class="menuSec1">
               <div class="menuSec1Box menuSec1Box1">
-                <img
-                  src="./assets/index/menu_limited_img.png"
-                  alt=""
-                  class="menuLimit"
-                />
-                <img
-                  src="./assets/menu/title_01@2x.png"
-                  alt=""
-                  class="menuContentLimit"
-                />
+                <div data-depth="0.8" class="back_layer">
+                  <img
+                    src="./assets/index/menu_limited_img.png"
+                    alt=""
+                    class="menuLimit"
+                  />
+                </div>
+                <div class="front_layer">
+                  <img
+                    src="./assets/menu/title_01@2x.png"
+                    alt=""
+                    class="menuContentLimit"
+                  />
+                </div>
               </div>
               <div class="menuSec1Box menuSec1Box2">
-                <img
-                  src="./assets/index/menu_nigiri_img.png"
-                  alt=""
-                  class="menuNigiri"
-                />
-                <img
-                  src="./assets/menu/title_02@2x.png"
-                  alt=""
-                  class="menuContentNigiri"
-                />
+                <div data-depth="0.8" class="back_layer">
+                  <img
+                    src="./assets/index/menu_nigiri_img.png"
+                    alt=""
+                    class="menuNigiri"
+                  />
+                </div>
+                <div class="front_layer">
+                  <img
+                    src="./assets/menu/title_02@2x.png"
+                    alt=""
+                    class="menuContentNigiri"
+                  />
+                </div>
               </div>
             </div>
             <!-------------------------- 2 ----------------------------->
-            <div data-depth="0.2" class="menuSec2">
+            <div class="menuSec2">
               <div class="menuSec1Box menuSec2Box1">
-                <img
-                  src="./assets/index/menu_nikunigiri_img.png"
-                  alt=""
-                  class="menuNiku"
-                />
-                <img
-                  src="./assets/menu/title_05@2x.png"
-                  alt=""
-                  class="menuContentNiku"
-                />
+                <div data-depth="0.8" class="back_layer">
+                  <img
+                    src="./assets/index/menu_nikunigiri_img.png"
+                    alt=""
+                    class="menuNiku"
+                  />
+                </div>
+                <div class="front_layer">
+                  <img
+                    src="./assets/menu/title_05@2x.png"
+                    alt=""
+                    class="menuContentNiku"
+                  />
+                </div>
               </div>
               <div class="menuSec1Box menuSec2Box2">
-                <img
-                  src="./assets/index/menu_gunkan_img.png"
-                  alt=""
-                  class="menuGunkan"
-                />
-                <img
-                  src="./assets/menu/title_03@2x.png"
-                  alt=""
-                  class="menuContentGunkan"
-                />
+                <div data-depth="0.8" class="back_layer">
+                  <img
+                    src="./assets/index/menu_gunkan_img.png"
+                    alt=""
+                    class="menuGunkan"
+                  />
+                </div>
+                <div class="front_layer">
+                  <img
+                    src="./assets/menu/title_03@2x.png"
+                    alt=""
+                    class="menuContentGunkan"
+                  />
+                </div>
               </div>
 
               <div class="menuSec1Box menuSec2Box3">
-                <img
-                  src="./assets/index/menu_side_img.png"
-                  alt=""
-                  class="menuSide"
-                />
-                <img
-                  src="./assets/menu/title_08@2x.png"
-                  alt=""
-                  class="menuContentSide"
-                />
+                <div data-depth="0.8" class="back_layer">
+                  <img
+                    src="./assets/index/menu_side_img.png"
+                    alt=""
+                    class="menuSide"
+                  />
+                </div>
+                <div class="front_layer">
+                  <img
+                    src="./assets/menu/title_08@2x.png"
+                    alt=""
+                    class="menuContentSide"
+                  />
+                </div>
               </div>
             </div>
             <!-------------------------- 3 ----------------------------->
 
-            <div data-depth="0.5" class="menuSec3">
+            <div class="menuSec3">
               <div class="menuSec1Box menuSec3Box1">
-                <img
-                  src="./assets/index/menu_kids_img.png"
-                  alt=""
-                  class="menuKids"
-                />
-                <img
-                  src="./assets/menu/title_11@2x.png"
-                  alt=""
-                  class="menuContentKids"
-                />
+                <div data-depth="0.8" class="back_layer">
+                  <img
+                    src="./assets/index/menu_kids_img.png"
+                    alt=""
+                    class="menuKids"
+                  />
+                </div>
+                <div class="front_layer">
+                  <img
+                    src="./assets/menu/title_11@2x.png"
+                    alt=""
+                    class="menuContentKids"
+                  />
+                </div>
               </div>
               <div class="menuSec1Box menuSec3Box2">
-                <img
-                  src="./assets/index/menu_takeout_img.png"
-                  alt=""
-                  class="menuTakeout"
-                />
-                <img
-                  src="./assets/menu/title_13@2x.png"
-                  alt=""
-                  class="menuContentTakeout"
-                />
+                <div data-depth="0.8" class="back_layer">
+                  <img
+                    src="./assets/index/menu_takeout_img.png"
+                    alt=""
+                    class="menuTakeout"
+                  />
+                </div>
+                <div class="front_layer">
+                  <img
+                    src="./assets/menu/title_13@2x.png"
+                    alt=""
+                    class="menuContentTakeout"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -206,6 +229,41 @@
           </div>
         </div>
       </div>
+
+      <script>
+        window.addEventListener("mousemove", (e) => {
+          // 获取鼠标位置
+          let x = e.clientX;
+          let y = e.clientY;
+
+          // 选择所有的 .back_layer 元素
+          const textElements = document.querySelectorAll(".back_layer");
+          // 选择所有的 .front_layer 元素
+          const frontElements = document.querySelectorAll(".front_layer");
+
+          // 计算鼠标相对于中心的偏移量（反向）
+          const offsetX = (window.innerWidth / 2 - x) * 0.01; // 设置反向水平偏移系数为 0.01
+          const offsetY = (window.innerHeight / 2 - y) * 0.01; // 设置反向垂直偏移系数为 0.01
+
+          // 处理 back_layer 元素
+          textElements.forEach((text) => {
+            text.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+          });
+
+          // 处理 front_layer 元素，设置较小的偏移量
+          frontElements.forEach((front) => {
+            const frontOffsetX = offsetX * 0.5; // front_layer 的偏移幅度比 back_layer 小
+            const frontOffsetY = offsetY * 0.5; // front_layer 的偏移幅度比 back_layer 小
+
+            front.style.transform = `translate(${frontOffsetX}px, ${frontOffsetY}px)`;
+          });
+        });
+        // if (typeof Parallax !== "undefined") {
+        //   console.log("Parallax 已加載");
+        // } else {
+        //   console.log("Parallax 未加載");
+        // }
+      </script>
 
       <!-- ----------------menuList------------------- -->
 
@@ -1213,5 +1271,10 @@
         </div>
       </footer>
     </div>
+
+    <!-- <script>
+      let scene = document.getElementById("scene");
+      let parallax = new Parallax(scene);
+    </script> -->
   </body>
 </html>
